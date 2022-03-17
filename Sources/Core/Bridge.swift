@@ -11,17 +11,17 @@ import Foundation
 /// Bridging related, mainly connecting the connection between each function point and the kernel
 internal enum BridgeMethod {
     ///`Initialization player`
-    case `init`(_ player: KJBasePlayer)
-    ///`Start preparing play`
-    case begin(_ player: KJBasePlayer)
-    ///`Playing`
-    case playing(_ player: KJBasePlayer, time: TimeInterval)
-    ///`Play end`
-    case end(_ player: KJBasePlayer)
-    ///`The player status has changed`
-    case playState(_ player: KJBasePlayer, state: KJPlayerState)
+    case `init`(KJBasePlayer)
     ///`Player destruction`
-    case `deinit`(_ player: KJBasePlayer)
+    case `deinit`(KJBasePlayer)
+    ///`Start preparing play`
+    case begin(KJBasePlayer)
+    ///`Play end`
+    case end(KJBasePlayer)
+    ///`Playing`
+    case playing(KJBasePlayer, time: TimeInterval)
+    ///`The player status has changed`
+    case playState(KJBasePlayer, state: KJPlayerState)
 }
 
 extension BridgeMethod {
@@ -29,7 +29,7 @@ extension BridgeMethod {
     @discardableResult
     internal func initialization() -> (isBackground: Bool, isPlaying: Bool)? {
         switch self {
-        case .`init`(_):
+        case .`init`:
             return (true, true)
         default:
             return nil

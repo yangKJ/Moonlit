@@ -30,7 +30,7 @@ public protocol KJPlayer {
     var totalTime: TimeInterval { get }
     /// Current video size
     var videoSize: CGSize { get }
-    /// loaded progress
+    /// Loaded progress
     var loadedProgress: Float { get }
     
     /// Whether the current playback is a video playback
@@ -40,15 +40,15 @@ public protocol KJPlayer {
     /// Start playing will respond to the last playing time and skip the opening
     /// The last play priority is higher than the skip opening
     func kj_play()
-    /// replay will respond to skip the opening
+    /// Replay will respond to skip the opening
     func kj_replay()
-    /// pause
+    /// Pause
     func kj_pause()
-    /// stop
+    /// Stop
     func kj_stop()
-    /// play at specified time, fast forward or rewind function
+    /// Play at specified time, fast forward or rewind function
     func kj_appointTime(_ time: TimeInterval)
-    /// screenshot of the current time
+    /// Screenshot of the current time
     func kj_currentTimeScreenshots(_ screenshots: @escaping (_ image: UIImage) -> Void)
 }
 

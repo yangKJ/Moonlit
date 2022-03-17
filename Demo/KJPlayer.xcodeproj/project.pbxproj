@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2003A049276F037900197093 /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2003A048276F037900197093 /* Timer+Extension.swift */; };
 		2003A04E276F055200197093 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2003A04D276F055200197093 /* Function.swift */; };
-		2005AC8B27697E92007573E9 /* SharedInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005AC8A27697E92007573E9 /* SharedInstance.swift */; };
+		2005AC8B27697E92007573E9 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005AC8A27697E92007573E9 /* Shared.swift */; };
 		2005AC8D2769841F007573E9 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005AC8C2769841F007573E9 /* Bridge.swift */; };
 		2005AC8F2769A03D007573E9 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005AC8E2769A03D007573E9 /* Notification.swift */; };
 		2005AC962769C25B007573E9 /* RecordTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005AC952769C25B007573E9 /* RecordTime.swift */; };
@@ -63,7 +63,7 @@
 /* Begin PBXFileReference section */
 		2003A048276F037900197093 /* Timer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
 		2003A04D276F055200197093 /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
-		2005AC8A27697E92007573E9 /* SharedInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedInstance.swift; sourceTree = "<group>"; };
+		2005AC8A27697E92007573E9 /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
 		2005AC8C2769841F007573E9 /* Bridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
 		2005AC8E2769A03D007573E9 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		2005AC952769C25B007573E9 /* RecordTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTime.swift; sourceTree = "<group>"; };
@@ -316,7 +316,7 @@
 				2005AC8E2769A03D007573E9 /* Notification.swift */,
 				682690CB2768CEA40073D1E7 /* Protocol.swift */,
 				2035EC0C276AE4A600B65363 /* Provider.swift */,
-				2005AC8A27697E92007573E9 /* SharedInstance.swift */,
+				2005AC8A27697E92007573E9 /* Shared.swift */,
 				20EE6E66276E535E00F882B9 /* Timer.swift */,
 			);
 			path = Core;
@@ -457,7 +457,7 @@
 				2084A880276F25EA007B355A /* Cache.swift in Sources */,
 				20A40B0527701DFF00A22418 /* KJFileHandleManager.m in Sources */,
 				20EE6E67276E535E00F882B9 /* Timer.swift in Sources */,
-				2005AC8B27697E92007573E9 /* SharedInstance.swift in Sources */,
+				2005AC8B27697E92007573E9 /* Shared.swift in Sources */,
 				205DA292276D9B9F00D4E3EA /* RecordTimeData.swift in Sources */,
 				205DA295276DCDEB00D4E3EA /* Prefetcher.swift in Sources */,
 				2003A04E276F055200197093 /* Function.swift in Sources */,

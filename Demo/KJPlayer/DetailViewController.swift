@@ -100,7 +100,7 @@ extension DetailViewController: KJPlayerDelegate {
     }
     
     func kj_player(_ player: KJBasePlayer, current: TimeInterval) {
-//        print("----current:\(current)")
+        //print("----current:\(current)")
     }
     
     func kj_player(_ player: KJBasePlayer, playFailed: NSError) {

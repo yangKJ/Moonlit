@@ -38,7 +38,7 @@ import UIKit
         self.playerView = view
     }
     
-    public override init() {
+    public required override init() {
         super.init()
         self.setupTimer(1)
         self.setupNotification()

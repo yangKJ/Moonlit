@@ -10,7 +10,7 @@ import UIKit
 import KJPlayer
 
 class AVPlayerViewController: BaseViewController {
-
+    
     lazy var playerView: KJPlayerView = {
         let view = KJPlayerView.init(frame: .zero)
         view.background = UIColor.red.cgColor
@@ -19,23 +19,32 @@ class AVPlayerViewController: BaseViewController {
         return view
     }()
     
-    lazy var player: KJAVPlayer = {
-        let videoURL = "https://mp4.vjshi.com/2017-11-21/7c2b143eeb27d9f2bf98c4ab03360cfe.mp4"
-        let provider = Provider.init(videoURL: videoURL)
-        let player = KJAVPlayer.init(withPlayerView: playerView)
-        player.delegate = self
-        player.provider = provider
-        return player
-    }()
+    lazy var player: KJAVPlayer = KJAVPlayer.shared
+    //lazy var player: KJAVPlayer = KJAVPlayer.init(withPlayerView: playerView)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
-        self.setupUI()
-        self.player.kj_play()
+        setupUI()
+        setupPlayer()
     }
-
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        KJAVPlayer.deinitShared()
+    }
+    
+    func setupPlayer() {
+        let videoURL = "https://mp4.vjshi.com/2017-11-21/7c2b143eeb27d9f2bf98c4ab03360cfe.mp4"
+        let provider = Provider.init(videoURL: videoURL)
+        player.playerView = playerView
+        player.delegate = self
+        player.provider = provider
+        
+        player.kj_play()
+    }
+    
     func setupUI() {
         self.view.addSubview(self.playerView)
         playerView.translatesAutoresizingMaskIntoConstraints = false

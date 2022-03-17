@@ -9,12 +9,8 @@ import Foundation
 import AVFoundation
 import UIKit
 
-@objc public class KJAVPlayer: KJBasePlayer {
-    private struct Keys {
-        static let status = "status"
-        static let videoSize = "presentationSize"
-        static let loadedTime = "loadedTimeRanges"
-    }
+@objc public class KJAVPlayer: KJBasePlayer, SharedInstance {
+    public typealias Player = KJAVPlayer
     
     private var timeObserver: Any? = nil
     private var videoPlayer: AVPlayer? {
@@ -68,39 +64,6 @@ import UIKit
     
     deinit {
         self.resetVideoPlayer()
-    }
-    
-    // MARK: - kvo
-    public override func observeValue(forKeyPath keyPath: String?,
-                                      of object: Any?,
-                                      change: [NSKeyValueChangeKey : Any]?,
-                                      context: UnsafeMutableRawPointer?) {
-        guard let item = self.playerItem else {
-            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
-            return
-        }
-        // Monitor player status
-        if keyPath == KJAVPlayer.Keys.status {
-            if item.status == .readyToPlay {
-                self.totalTimeObserve = CMTimeGetSeconds(item.duration)
-                self.playerStatus = .beginPlay
-            } else {
-                self.playerStatus = .failed(error: item.error as NSError?)
-            }
-        }
-        // Monitor video size
-        else if keyPath == KJAVPlayer.Keys.videoSize {
-            self.videoSizeObserve = item.presentationSize
-        }
-        // Monitor video loaded time
-        else if keyPath == KJAVPlayer.Keys.loadedTime {
-            guard let ranges = item.loadedTimeRanges.first?.timeRangeValue else {
-                return
-            }
-            let start = CMTimeGetSeconds(ranges.start)
-            let duration = CMTimeGetSeconds(ranges.duration)
-            self.loadedTimeObserve = start + duration
-        }
     }
     
     /// Video play finished
@@ -180,7 +143,48 @@ import UIKit
     }
 }
 
-// MARK: - private player methods
+// MARK: - kvo
+extension KJAVPlayer {
+    private struct Keys {
+        static let status = "status"
+        static let videoSize = "presentationSize"
+        static let loadedTime = "loadedTimeRanges"
+    }
+    
+    public override func observeValue(forKeyPath keyPath: String?,
+                                      of object: Any?,
+                                      change: [NSKeyValueChangeKey : Any]?,
+                                      context: UnsafeMutableRawPointer?) {
+        guard let item = self.playerItem else {
+            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
+            return
+        }
+        // Monitor player status
+        if keyPath == KJAVPlayer.Keys.status {
+            if item.status == .readyToPlay {
+                self.totalTimeObserve = CMTimeGetSeconds(item.duration)
+                self.playerStatus = .beginPlay
+            } else {
+                self.playerStatus = .failed(error: item.error as NSError?)
+            }
+        }
+        // Monitor video size
+        else if keyPath == KJAVPlayer.Keys.videoSize {
+            self.videoSizeObserve = item.presentationSize
+        }
+        // Monitor video loaded time
+        else if keyPath == KJAVPlayer.Keys.loadedTime {
+            guard let ranges = item.loadedTimeRanges.first?.timeRangeValue else {
+                return
+            }
+            let start = CMTimeGetSeconds(ranges.start)
+            let duration = CMTimeGetSeconds(ranges.duration)
+            self.loadedTimeObserve = start + duration
+        }
+    }
+}
+
+// MARK: - Private player methods
 extension KJAVPlayer {
     
     private func resetVideoPlayer() {
@@ -237,11 +241,12 @@ extension KJAVPlayer {
         }
         let ctime = CMTime(seconds: provider.timeSpace, preferredTimescale: 1)
         timeObserver = videoPlayer.addPeriodicTimeObserver(forInterval: ctime,
-                                                           queue: DispatchQueue.main) { [weak self] time in
-            guard let `self` = self, self.isLiveStreaming == false else { return }
+                                                           queue: DispatchQueue.main,
+                                                           using: { [weak self] (time) in
+            guard let `self` = self, !self.isLiveStreaming else { return }
             let sec = CMTimeGetSeconds(time)
             self.playerStatus = .playing(time: sec)
-        }
+        })
     }
     
     private func configPlayer(_ player: AVPlayer) {
