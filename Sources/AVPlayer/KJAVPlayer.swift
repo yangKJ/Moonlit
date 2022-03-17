@@ -7,13 +7,13 @@
 
 import Foundation
 import AVFoundation
-import UIKit
 
 @objc public class KJAVPlayer: KJBasePlayer, SharedInstance {
+    private var timeObserver: Any? = nil
+    
     public typealias Player = KJAVPlayer
     
-    private var timeObserver: Any? = nil
-    private var videoPlayer: AVPlayer? {
+    public private(set) var videoPlayer: AVPlayer? {
         didSet {
             if let videoPlayer = videoPlayer {
                 videoPlayer.usesExternalPlaybackWhileExternalScreenIsActive = true
@@ -21,7 +21,7 @@ import UIKit
         }
     }
     
-    internal var playerLayer: AVPlayerLayer? {
+    public private(set) var playerLayer: AVPlayerLayer? {
         didSet {
             guard let playerLayer = playerLayer, let view = playerView else {
                 return
@@ -48,7 +48,7 @@ import UIKit
     }
     
     /// Media Resource Management Object
-    private var playerItem: AVPlayerItem? {
+    public private(set) var playerItem: AVPlayerItem? {
         didSet {
             if let item = playerItem {
                 item.addObserver(self, forKeyPath: KJAVPlayer.Keys.status, options: .new, context: nil)

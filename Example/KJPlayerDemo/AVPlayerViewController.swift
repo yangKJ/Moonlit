@@ -22,6 +22,21 @@ class AVPlayerViewController: BaseViewController {
     lazy var player: KJAVPlayer = KJAVPlayer.shared
     //lazy var player: KJAVPlayer = KJAVPlayer.init(withPlayerView: playerView)
     
+    lazy var button: UIButton = {
+        let button = UIButton.init(type: .custom)
+        button.backgroundColor = UIColor.yellow
+        button.addTarget(self, action: #selector(buttonAction(_:)), for: .touchUpInside)
+        button.setTitle("点我截图", for: .normal)
+        button.setTitleColor(UIColor.red, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
+    @objc func buttonAction(_ sender: UIButton) {
+        let image = Screenshots.screenshots(player, time: player.currentTime)
+        button.setImage(image, for: .normal)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,13 +61,19 @@ class AVPlayerViewController: BaseViewController {
     }
     
     func setupUI() {
-        self.view.addSubview(self.playerView)
+        view.addSubview(playerView)
+        view.addSubview(button)
         playerView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             playerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             playerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             playerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            playerView.heightAnchor.constraint(equalTo: playerView.widthAnchor, multiplier: 0.5)
+            playerView.heightAnchor.constraint(equalTo: playerView.widthAnchor, multiplier: 0.5),
+            
+            button.topAnchor.constraint(equalTo: playerView.bottomAnchor, constant: 20),
+            button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            button.heightAnchor.constraint(equalTo: button.widthAnchor, multiplier: 0.5),
         ])
     }
 }
