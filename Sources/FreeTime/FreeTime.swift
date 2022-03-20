@@ -22,7 +22,7 @@ import Foundation
 extension KJBasePlayer {
     
     /// Free watching time protocol
-    @objc weak var freeDelegate: KJPlayerFreeDelegate? {
+    @objc public weak var freeDelegate: KJPlayerFreeDelegate? {
         get { objc_getAssociatedObject(self, &Keys.freeDelegate) as? KJPlayerFreeDelegate }
         set {
             objc_setAssociatedObject(self, &Keys.freeDelegate, newValue, .OBJC_ASSOCIATION_ASSIGN)

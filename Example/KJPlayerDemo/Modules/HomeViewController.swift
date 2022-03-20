@@ -29,17 +29,17 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.setupInit()
-        self.setupUI()
+        setupInit()
+        setupUI()
     }
     
     func setupInit() {
-        self.title = "🎷测试用例"
-        self.view.backgroundColor = UIColor.white
+        title = "综合测试"
+        view.backgroundColor = UIColor.white
     }
     
     func setupUI() {
-        self.view.addSubview(self.tableView)
+        view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -57,11 +57,11 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.viewModel.datas.count
+        return viewModel.datas.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let element = self.viewModel.datas[indexPath.row]
+        let element = viewModel.datas[indexPath.row]
         let cell = UITableViewCell(style: .value1, reuseIdentifier: HomeViewController.identifier)
         cell.selectionStyle = .none
         cell.accessoryType = .disclosureIndicator
@@ -76,9 +76,9 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let element = self.viewModel.datas[indexPath.row]
+        let element = viewModel.datas[indexPath.row]
         let vc: BaseViewController = element.viewController()
         vc.title = element.rawValue
-        self.navigationController?.pushViewController(vc, animated: true)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

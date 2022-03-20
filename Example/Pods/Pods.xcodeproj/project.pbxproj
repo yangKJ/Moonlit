@@ -17,11 +17,13 @@
 		1A57E214BBCBA6D8536EF67D8DACF124 /* KJPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08414343C00DA137690605292CE6A1ED /* KJPlayer.swift */; };
 		22D67C3A6D49B8A6F2A13F93FA713580 /* PictureInPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F2CEE9D3CA13CE7277ABCDAC1BA162 /* PictureInPicture.swift */; };
 		33B27A974587CCDCE26E981A48DC6DBB /* RecordTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FD5E873F71ECA77980B4C0D7B1DC7F /* RecordTime.swift */; };
+		354C51FF6F8CE6007802F04A34297608 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		385939AE6566861EA214F6D5CDC9B8AB /* Pods-KJPlayerDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85782C7B007D1E7C0F98E6F9226E296A /* Pods-KJPlayerDemo-dummy.m */; };
 		3C0CA9881C10F48DC666BECF276C0A0C /* KJPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25123D0FBB12A3EF4CB8166145B14DA9 /* KJPlayerView.swift */; };
 		41E1CC10AC5F746AFB0E70AF06F59113 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F260B7940BB584DDA67AB1A3B65BF91F /* Bridge.swift */; };
-		4AF6BD4561815313CC51341DB60F6B67 /* Pods-KJPlayerDemo_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A22F141B8FCFE943B1C1386312A503 /* Pods-KJPlayerDemo_Tests-dummy.m */; };
 		4E769CDBF5FAE0D2215C78D96C5687AC /* KJFileHandleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A54646908EB9ABB51574656F948BACC /* KJFileHandleInfo.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4FF5A27C61D92A264F975B5C36998F78 /* KJFileHandleInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3249B3CEE9ACA4B38449EE9E00798924 /* KJFileHandleInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56DE9A52458EFBD4A6807121902B477A /* Pods-KJPlayerDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EEADE3DBCCDCBD6099A619C7EFBDA10 /* Pods-KJPlayerDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AC6FC4A63CBE24426CAD180E0E5397B /* KJBasePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583EA66AA40513A809B3E8B5EAA84B07 /* KJBasePlayer.swift */; };
 		69EC36176D54675C59CD619A31474824 /* KJPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 451EE72B7521C1484173CAD3DFB3C69F /* KJPlayer-dummy.m */; };
 		6B2C8174760C9192BCD5C2844D86B4F2 /* KJAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9AD27F1550613B1C3949D78B31AFDF /* KJAVPlayer.swift */; };
@@ -31,16 +33,12 @@
 		6F5DFD6E57A3C2A61D447DF6786AF2D4 /* DatabaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3159D2E80F9FCB0FDD0B5696E833279E /* DatabaseConfiguration.swift */; };
 		74CC9216DC8AC2B851696684AE4573FB /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D12BC44634AD7CE06DFE29249B8B3A /* Provider.swift */; };
 		7B63114C429606857EA482718CB29B4C /* KJDownloaderCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E5A59B6D5F593994D67FD5AF5B76571 /* KJDownloaderCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7CAE0A3138130FD3B0AA729BC176D5D7 /* Pods-KJPlayerDemo_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5C44CA74C7B8EB4A6F7FF0FE42246B /* Pods-KJPlayerDemo_Example-dummy.m */; };
 		821F677EEE89B5C0A11A467494A4C0A5 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6EC7C20F568DA576409910DEB7A3015 /* DatabaseManager.swift */; };
 		84E533A0BDAC30524399BC6B4995374E /* KJDownloaderCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = CE98240895E1E6A21A71C1573BF27C18 /* KJDownloaderCommon.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8556090A934C0FE23B0F9CF9E2C7435C /* PlayerVideoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791DB1C699F178767FE209BB02DD3ED0 /* PlayerVideoData.swift */; };
-		9AD251B48E7414B2E2AFDC028DD5C5AD /* Pods-KJPlayerDemo_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0509B00B3DD47F559EB6ABDC2623255D /* Pods-KJPlayerDemo_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD9451D9E7137FF28F297DB49D88DA43 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D3490C543A271B8ADAF1454E001778 /* Cache.swift */; };
 		ADD58A986046FFE5A1EBF07410867FF4 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9554FB704D810F6A5E1008FE70DAD /* Timer.swift */; };
-		BD0E8143015837F9B923F085964E8AF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		C065DD554211AFC8F88A1339E19B9582 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7157B6E3F4083F4B6359A3D4CB568CE5 /* Enum.swift */; };
-		C773FE25D13FB1750EE30E1907236839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		DF48D10A4623C88C38B53A04350A41FC /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593F6659D47917650564BE29259BD907 /* Protocol.swift */; };
 		E14019FAFEFA198A314E18FF1A9AC0B9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7217D0255CD1B65C3ACCFE9D5180E5 /* Common.swift */; };
 		EA1ACB5D6F2C2FC111C44C57FB2EC219 /* KJFileHandleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CA6735BB4741FEF4F24023A9A6EB8CF /* KJFileHandleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,10 +48,16 @@
 		F3E8CD480C7631F7EC99A8FCAFD671C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		F6662BFF81C78D0C25AFBF5433479204 /* KJDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A54652045329201CAE2C9BDCFFA382A /* KJDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9F962296F76A30231BC7942D43AD207 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B88FECEFB4CB3CB5103B5E4F05F08D4 /* Notification.swift */; };
-		FE4B0AA56FC2D142844246DC7429FF6F /* Pods-KJPlayerDemo_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9693208B755521D71ED018DBA5144C1 /* Pods-KJPlayerDemo_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1322BEF071242351C408123626E11E89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E1165D248E0A59B340A909F5E58BD41;
+			remoteInfo = KJPlayer;
+		};
 		19F6DEAFA749BF423E533E047451C115 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -61,91 +65,68 @@
 			remoteGlobalIDString = 9569B6DD68D1EE0003E4A551C5F7F010;
 			remoteInfo = "KJPlayer-KJPlayer";
 		};
-		26D41021D0EABAFD2CB85F5B64547471 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0E1165D248E0A59B340A909F5E58BD41;
-			remoteInfo = KJPlayer;
-		};
-		8404FE83F49C60BFEB754A9A277A3B4C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8C3D6F65BF0765452CE0F2421E1BB11A;
-			remoteInfo = "Pods-KJPlayerDemo_Example";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0509B00B3DD47F559EB6ABDC2623255D /* Pods-KJPlayerDemo_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KJPlayerDemo_Example-umbrella.h"; sourceTree = "<group>"; };
 		0747D1B6D63A906C126BBB0BD855237D /* KJPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KJPlayer-Info.plist"; sourceTree = "<group>"; };
 		08414343C00DA137690605292CE6A1ED /* KJPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KJPlayer.swift; path = Sources/Core/KJPlayer.swift; sourceTree = "<group>"; };
-		0A2423EEAAA668069CA4CD02B2CC760D /* Pods-KJPlayerDemo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KJPlayerDemo_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0AB441EFE0502C0DB5CCD64B71541A74 /* Function.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Function.swift; path = Sources/Core/Function.swift; sourceTree = "<group>"; };
+		0EEADE3DBCCDCBD6099A619C7EFBDA10 /* Pods-KJPlayerDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KJPlayerDemo-umbrella.h"; sourceTree = "<group>"; };
 		167DCFEBBE6C02052D16A18AD04134B5 /* ResourceBundle-KJPlayer-KJPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-KJPlayer-KJPlayer-Info.plist"; sourceTree = "<group>"; };
-		193186DE195D0BDC9851FA5A297C5D47 /* Pods-KJPlayerDemo_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KJPlayerDemo_Tests-Info.plist"; sourceTree = "<group>"; };
-		204AF7C51977A508AEF678AA26B7D5AC /* Pods-KJPlayerDemo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KJPlayerDemo_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		209816D2EDCFED9D344C732CE6738FA4 /* Pods-KJPlayerDemo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KJPlayerDemo_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		24750A30F98B51279320AD1CCF7172C3 /* Pods-KJPlayerDemo_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KJPlayerDemo_Example-Info.plist"; sourceTree = "<group>"; };
 		25123D0FBB12A3EF4CB8166145B14DA9 /* KJPlayerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KJPlayerView.swift; path = Sources/Core/KJPlayerView.swift; sourceTree = "<group>"; };
-		2F1FE54CF28B6FE507266D079C8AFF43 /* Pods-KJPlayerDemo_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KJPlayerDemo_Tests"; path = Pods_KJPlayerDemo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6D85B65E4A94C63FE0ED7F1B488707 /* KJPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KJPlayer.modulemap; sourceTree = "<group>"; };
-		30BFAE122C2D9846BE574F619B8D7E19 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		30BFAE122C2D9846BE574F619B8D7E19 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3159D2E80F9FCB0FDD0B5696E833279E /* DatabaseConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseConfiguration.swift; path = Sources/Database/DatabaseConfiguration.swift; sourceTree = "<group>"; };
 		3249B3CEE9ACA4B38449EE9E00798924 /* KJFileHandleInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KJFileHandleInfo.h; path = Sources/Downloader/KJFileHandleInfo.h; sourceTree = "<group>"; };
 		3A1567A7CF6EE2B45527D56564B025D9 /* CacheManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheManager.swift; path = Sources/Cache/CacheManager.swift; sourceTree = "<group>"; };
 		3A54652045329201CAE2C9BDCFFA382A /* KJDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KJDownloader.h; path = Sources/Downloader/KJDownloader.h; sourceTree = "<group>"; };
-		425AA8C8CE06AC47B1085B2A6A005B0B /* Pods-KJPlayerDemo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KJPlayerDemo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E006D4D02546056FA3A7FC18E1AF1AA /* Pods-KJPlayerDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KJPlayerDemo.modulemap"; sourceTree = "<group>"; };
 		451EE72B7521C1484173CAD3DFB3C69F /* KJPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KJPlayer-dummy.m"; sourceTree = "<group>"; };
 		4703D8B80A1A6D4802DAFA93B5E39C32 /* KJPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KJPlayer.release.xcconfig; sourceTree = "<group>"; };
 		4B88FECEFB4CB3CB5103B5E4F05F08D4 /* Notification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notification.swift; path = Sources/Core/Notification.swift; sourceTree = "<group>"; };
-		4C98CAB20331952086B829F86CA05749 /* Pods-KJPlayerDemo_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KJPlayerDemo_Example-resources.sh"; sourceTree = "<group>"; };
-		4D156F47328A25693059CF2B0C8516DD /* Pods-KJPlayerDemo_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-KJPlayerDemo_Example"; path = Pods_KJPlayerDemo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F5C44CA74C7B8EB4A6F7FF0FE42246B /* Pods-KJPlayerDemo_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KJPlayerDemo_Example-dummy.m"; sourceTree = "<group>"; };
 		52F2CEE9D3CA13CE7277ABCDAC1BA162 /* PictureInPicture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PictureInPicture.swift; path = Sources/Pip/PictureInPicture.swift; sourceTree = "<group>"; };
 		530C5ADFE530AADBDEF42937B17822C5 /* KJPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KJPlayer-prefix.pch"; sourceTree = "<group>"; };
-		55ED13A429074400B1D7C59A51AC83B6 /* Pods-KJPlayerDemo_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KJPlayerDemo_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		583EA66AA40513A809B3E8B5EAA84B07 /* KJBasePlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KJBasePlayer.swift; path = Sources/Core/KJBasePlayer.swift; sourceTree = "<group>"; };
-		58A9341F86B217EAED4F1DB5524C40C0 /* KJPlayer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KJPlayer; path = KJPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58A9341F86B217EAED4F1DB5524C40C0 /* KJPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KJPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		593F6659D47917650564BE29259BD907 /* Protocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocol.swift; path = Sources/Core/Protocol.swift; sourceTree = "<group>"; };
 		5CA6735BB4741FEF4F24023A9A6EB8CF /* KJFileHandleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KJFileHandleManager.h; path = Sources/Downloader/KJFileHandleManager.h; sourceTree = "<group>"; };
 		69E048606C98724D85AA6C53FBE840F5 /* KJPlayer-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KJPlayer-Bridging-Header.h"; path = "Sources/Downloader/KJPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
 		7157B6E3F4083F4B6359A3D4CB568CE5 /* Enum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Enum.swift; path = Sources/Core/Enum.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		75590A77F93302A7FD566912E6E865F0 /* APlayer.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = APlayer.xcdatamodel; sourceTree = "<group>"; };
-		75BC7A83F996430464B17730A7971623 /* Pods-KJPlayerDemo_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KJPlayerDemo_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		77B0ECEAC0473FDDC08BA99119C88C11 /* FreeTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FreeTime.swift; path = Sources/FreeTime/FreeTime.swift; sourceTree = "<group>"; };
 		791DB1C699F178767FE209BB02DD3ED0 /* PlayerVideoData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlayerVideoData.swift; path = Sources/Database/PlayerVideoData.swift; sourceTree = "<group>"; };
+		7FD8A35B19C7F2F5BE1372BAA38EA766 /* Pods-KJPlayerDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KJPlayerDemo-Info.plist"; sourceTree = "<group>"; };
 		817530A5661FC8AB118EF156DC03FD62 /* Shared.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shared.swift; path = Sources/Core/Shared.swift; sourceTree = "<group>"; };
 		81D12BC44634AD7CE06DFE29249B8B3A /* Provider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Provider.swift; path = Sources/Core/Provider.swift; sourceTree = "<group>"; };
-		8BAEC6A7EF27C1BCB0F984AC376A1AB6 /* KJPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KJPlayer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8F005F4F080E6171E93AF0B616874861 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		90A22F141B8FCFE943B1C1386312A503 /* Pods-KJPlayerDemo_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KJPlayerDemo_Tests-dummy.m"; sourceTree = "<group>"; };
+		81F88E35C2B5A07A50B4817E0CFF18E8 /* Pods_KJPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KJPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85782C7B007D1E7C0F98E6F9226E296A /* Pods-KJPlayerDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KJPlayerDemo-dummy.m"; sourceTree = "<group>"; };
+		8AA8461BCF5D6E99BC92EE48400AA607 /* Pods-KJPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KJPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8BAEC6A7EF27C1BCB0F984AC376A1AB6 /* KJPlayer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KJPlayer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8F005F4F080E6171E93AF0B616874861 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		93582160A941564FB3CEF1E1644E750B /* KJFileHandleManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KJFileHandleManager.m; path = Sources/Downloader/KJFileHandleManager.m; sourceTree = "<group>"; };
 		97FD5E873F71ECA77980B4C0D7B1DC7F /* RecordTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordTime.swift; path = Sources/RecordTime/RecordTime.swift; sourceTree = "<group>"; };
 		9A54646908EB9ABB51574656F948BACC /* KJFileHandleInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KJFileHandleInfo.m; path = Sources/Downloader/KJFileHandleInfo.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E5A59B6D5F593994D67FD5AF5B76571 /* KJDownloaderCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KJDownloaderCommon.h; path = Sources/Downloader/KJDownloaderCommon.h; sourceTree = "<group>"; };
-		A3118615D9B1BEA66D175F4261A056A6 /* Pods-KJPlayerDemo_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KJPlayerDemo_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A3167C5D017C1B94E2A2F6D77EE4CE8E /* Screenshots.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Screenshots.swift; path = Sources/Screenshots/Screenshots.swift; sourceTree = "<group>"; };
-		A9D125E3850743F8907AEE14032E8BEA /* Pods-KJPlayerDemo_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KJPlayerDemo_Example.modulemap"; sourceTree = "<group>"; };
-		B0CE238EDBA0711908FF46CCA8505513 /* Pods-KJPlayerDemo_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KJPlayerDemo_Tests.modulemap"; sourceTree = "<group>"; };
+		A4F6D788D4E071A88C468101C51B6099 /* Pods-KJPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KJPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B56FA8EBD6E262EF2DF2D065B24F654A /* SkipTime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkipTime.swift; path = Sources/SkipTime/SkipTime.swift; sourceTree = "<group>"; };
+		B6B61AFC9A639D8E27BE2095CF0CD08F /* Pods-KJPlayerDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KJPlayerDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		C6D3490C543A271B8ADAF1454E001778 /* Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cache.swift; path = Sources/Cache/Cache.swift; sourceTree = "<group>"; };
 		C6D9554FB704D810F6A5E1008FE70DAD /* Timer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timer.swift; path = Sources/Core/Timer.swift; sourceTree = "<group>"; };
-		C9693208B755521D71ED018DBA5144C1 /* Pods-KJPlayerDemo_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KJPlayerDemo_Tests-umbrella.h"; sourceTree = "<group>"; };
 		CB9AD27F1550613B1C3949D78B31AFDF /* KJAVPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KJAVPlayer.swift; path = Sources/AVPlayer/KJAVPlayer.swift; sourceTree = "<group>"; };
 		CE98240895E1E6A21A71C1573BF27C18 /* KJDownloaderCommon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KJDownloaderCommon.m; path = Sources/Downloader/KJDownloaderCommon.m; sourceTree = "<group>"; };
 		D2B120DCB0FFDFB71E94A1F7CB25AD02 /* RecordTimeData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordTimeData.swift; path = Sources/RecordTime/RecordTimeData.swift; sourceTree = "<group>"; };
-		DDCF2876596557230FA59C03437785B2 /* Pods-KJPlayerDemo_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KJPlayerDemo_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DA3DFAE25E62F7E368FB7E7A8CB03FB2 /* Pods-KJPlayerDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KJPlayerDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E2AAED3888E94B88CB0DA00AE9947FEA /* KJDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KJDownloader.m; path = Sources/Downloader/KJDownloader.m; sourceTree = "<group>"; };
 		E8C4BB4C990751A719B02EC249206772 /* KJPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KJPlayer.debug.xcconfig; sourceTree = "<group>"; };
-		F164C023991D4FA4862ED5F7FC818A31 /* KJPlayer-KJPlayer */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "KJPlayer-KJPlayer"; path = KJPlayer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F164C023991D4FA4862ED5F7FC818A31 /* KJPlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJPlayer.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		F260B7940BB584DDA67AB1A3B65BF91F /* Bridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bridge.swift; path = Sources/Core/Bridge.swift; sourceTree = "<group>"; };
 		F362E15D96F90587F02ADFAFA4B41E49 /* Timer+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Timer+Extension.swift"; path = "Sources/Extension/Timer+Extension.swift"; sourceTree = "<group>"; };
 		F6EC7C20F568DA576409910DEB7A3015 /* DatabaseManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = Sources/Database/DatabaseManager.swift; sourceTree = "<group>"; };
 		F88BB224EF0EEC07CA92CC4D33B1C502 /* KJPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KJPlayer-umbrella.h"; sourceTree = "<group>"; };
+		FABB9FBB681A7C701149EB09C8C24D76 /* Pods-KJPlayerDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KJPlayerDemo-resources.sh"; sourceTree = "<group>"; };
 		FD7217D0255CD1B65C3ACCFE9D5180E5 /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Sources/Extension/Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,27 +138,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3F952D1B99603D8DFE2A76C403230016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				354C51FF6F8CE6007802F04A34297608 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		41CC61278E6A61DF2CA998743A07A9AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F3E8CD480C7631F7EC99A8FCAFD671C7 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B9AC16D7FABFFD4F97C17EBDB38473D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD0E8143015837F9B923F085964E8AF5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AE61CB7B23CE0CEEFD981D45564D4C62 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C773FE25D13FB1750EE30E1907236839 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,15 +176,12 @@
 			name = AVPlayer;
 			sourceTree = "<group>";
 		};
-		1ABC71B68E2C98BDD9B3ADAFD4A21D6A /* Products */ = {
+		083CEA6F3039BC6DBD0AAB307F081808 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				58A9341F86B217EAED4F1DB5524C40C0 /* KJPlayer */,
-				F164C023991D4FA4862ED5F7FC818A31 /* KJPlayer-KJPlayer */,
-				4D156F47328A25693059CF2B0C8516DD /* Pods-KJPlayerDemo_Example */,
-				2F1FE54CF28B6FE507266D079C8AFF43 /* Pods-KJPlayerDemo_Tests */,
+				2786378BDE1E38CAC6A8718AD2A8E437 /* Pods-KJPlayerDemo */,
 			);
-			name = Products;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		1CB0571D7E93337D9387A2C38BC0E16D /* RecordTime */ = {
@@ -221,6 +191,23 @@
 				D2B120DCB0FFDFB71E94A1F7CB25AD02 /* RecordTimeData.swift */,
 			);
 			name = RecordTime;
+			sourceTree = "<group>";
+		};
+		2786378BDE1E38CAC6A8718AD2A8E437 /* Pods-KJPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3E006D4D02546056FA3A7FC18E1AF1AA /* Pods-KJPlayerDemo.modulemap */,
+				DA3DFAE25E62F7E368FB7E7A8CB03FB2 /* Pods-KJPlayerDemo-acknowledgements.markdown */,
+				B6B61AFC9A639D8E27BE2095CF0CD08F /* Pods-KJPlayerDemo-acknowledgements.plist */,
+				85782C7B007D1E7C0F98E6F9226E296A /* Pods-KJPlayerDemo-dummy.m */,
+				7FD8A35B19C7F2F5BE1372BAA38EA766 /* Pods-KJPlayerDemo-Info.plist */,
+				FABB9FBB681A7C701149EB09C8C24D76 /* Pods-KJPlayerDemo-resources.sh */,
+				0EEADE3DBCCDCBD6099A619C7EFBDA10 /* Pods-KJPlayerDemo-umbrella.h */,
+				8AA8461BCF5D6E99BC92EE48400AA607 /* Pods-KJPlayerDemo.debug.xcconfig */,
+				A4F6D788D4E071A88C468101C51B6099 /* Pods-KJPlayerDemo.release.xcconfig */,
+			);
+			name = "Pods-KJPlayerDemo";
+			path = "Target Support Files/Pods-KJPlayerDemo";
 			sourceTree = "<group>";
 		};
 		283CBA214DEB1B26D30F8417578D95A7 /* KJPlayer */ = {
@@ -268,21 +255,22 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		59C860C3F30D9EB9DD95BDFC436EBCE3 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5C7535B6CF096E90BD15D14E9797D03 /* Pods-KJPlayerDemo_Example */,
-				D1711EBD0167EADCA3241D06146009C1 /* Pods-KJPlayerDemo_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		65FF1ECD137B3801CFB8D2E645BD0538 /* SkipTime */ = {
 			isa = PBXGroup;
 			children = (
 				B56FA8EBD6E262EF2DF2D065B24F654A /* SkipTime.swift */,
 			);
 			name = SkipTime;
+			sourceTree = "<group>";
+		};
+		715772F6B2D0A4F2AAFDBA80EAD47F46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58A9341F86B217EAED4F1DB5524C40C0 /* KJPlayer.framework */,
+				F164C023991D4FA4862ED5F7FC818A31 /* KJPlayer.bundle */,
+				81F88E35C2B5A07A50B4817E0CFF18E8 /* Pods_KJPlayerDemo.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7198D34B59E4B34720A2E20EE3C12E67 /* Development Pods */ = {
@@ -299,23 +287,6 @@
 				52F2CEE9D3CA13CE7277ABCDAC1BA162 /* PictureInPicture.swift */,
 			);
 			name = Pip;
-			sourceTree = "<group>";
-		};
-		B5C7535B6CF096E90BD15D14E9797D03 /* Pods-KJPlayerDemo_Example */ = {
-			isa = PBXGroup;
-			children = (
-				A9D125E3850743F8907AEE14032E8BEA /* Pods-KJPlayerDemo_Example.modulemap */,
-				DDCF2876596557230FA59C03437785B2 /* Pods-KJPlayerDemo_Example-acknowledgements.markdown */,
-				A3118615D9B1BEA66D175F4261A056A6 /* Pods-KJPlayerDemo_Example-acknowledgements.plist */,
-				4F5C44CA74C7B8EB4A6F7FF0FE42246B /* Pods-KJPlayerDemo_Example-dummy.m */,
-				24750A30F98B51279320AD1CCF7172C3 /* Pods-KJPlayerDemo_Example-Info.plist */,
-				4C98CAB20331952086B829F86CA05749 /* Pods-KJPlayerDemo_Example-resources.sh */,
-				0509B00B3DD47F559EB6ABDC2623255D /* Pods-KJPlayerDemo_Example-umbrella.h */,
-				204AF7C51977A508AEF678AA26B7D5AC /* Pods-KJPlayerDemo_Example.debug.xcconfig */,
-				0A2423EEAAA668069CA4CD02B2CC760D /* Pods-KJPlayerDemo_Example.release.xcconfig */,
-			);
-			name = "Pods-KJPlayerDemo_Example";
-			path = "Target Support Files/Pods-KJPlayerDemo_Example";
 			sourceTree = "<group>";
 		};
 		C33D372381FAB50911A99723474D71C7 /* Screenshots */ = {
@@ -350,25 +321,9 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				7198D34B59E4B34720A2E20EE3C12E67 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				1ABC71B68E2C98BDD9B3ADAFD4A21D6A /* Products */,
-				59C860C3F30D9EB9DD95BDFC436EBCE3 /* Targets Support Files */,
+				715772F6B2D0A4F2AAFDBA80EAD47F46 /* Products */,
+				083CEA6F3039BC6DBD0AAB307F081808 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D1711EBD0167EADCA3241D06146009C1 /* Pods-KJPlayerDemo_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				B0CE238EDBA0711908FF46CCA8505513 /* Pods-KJPlayerDemo_Tests.modulemap */,
-				75BC7A83F996430464B17730A7971623 /* Pods-KJPlayerDemo_Tests-acknowledgements.markdown */,
-				55ED13A429074400B1D7C59A51AC83B6 /* Pods-KJPlayerDemo_Tests-acknowledgements.plist */,
-				90A22F141B8FCFE943B1C1386312A503 /* Pods-KJPlayerDemo_Tests-dummy.m */,
-				193186DE195D0BDC9851FA5A297C5D47 /* Pods-KJPlayerDemo_Tests-Info.plist */,
-				C9693208B755521D71ED018DBA5144C1 /* Pods-KJPlayerDemo_Tests-umbrella.h */,
-				425AA8C8CE06AC47B1085B2A6A005B0B /* Pods-KJPlayerDemo_Tests.debug.xcconfig */,
-				209816D2EDCFED9D344C732CE6738FA4 /* Pods-KJPlayerDemo_Tests.release.xcconfig */,
-			);
-			name = "Pods-KJPlayerDemo_Tests";
-			path = "Target Support Files/Pods-KJPlayerDemo_Tests";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -442,19 +397,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2D500ECAF0D46EBA8ECF7C5C5486254D /* Headers */ = {
+		36E69CC5B1C462DD66C5F5838EAEC816 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AD251B48E7414B2E2AFDC028DD5C5AD /* Pods-KJPlayerDemo_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA8F83C6946A022C826D3C6036360B4B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE4B0AA56FC2D142844246DC7429FF6F /* Pods-KJPlayerDemo_Tests-umbrella.h in Headers */,
+				56DE9A52458EFBD4A6807121902B477A /* Pods-KJPlayerDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,26 +437,26 @@
 			);
 			name = KJPlayer;
 			productName = KJPlayer;
-			productReference = 58A9341F86B217EAED4F1DB5524C40C0 /* KJPlayer */;
+			productReference = 58A9341F86B217EAED4F1DB5524C40C0 /* KJPlayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8C3D6F65BF0765452CE0F2421E1BB11A /* Pods-KJPlayerDemo_Example */ = {
+		9239F71B0E6383B9D6F4CBE0908388DD /* Pods-KJPlayerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A8B8860727DDC512CD0F3D6DACB1A03D /* Build configuration list for PBXNativeTarget "Pods-KJPlayerDemo_Example" */;
+			buildConfigurationList = AC4A64D24CC563F5DAF237301F9BD7F1 /* Build configuration list for PBXNativeTarget "Pods-KJPlayerDemo" */;
 			buildPhases = (
-				2D500ECAF0D46EBA8ECF7C5C5486254D /* Headers */,
-				4BD56540D9A9614E0795C81C670B2BEB /* Sources */,
-				AE61CB7B23CE0CEEFD981D45564D4C62 /* Frameworks */,
-				B3FB576B7B5FE7165C3513F0FA581D43 /* Resources */,
+				36E69CC5B1C462DD66C5F5838EAEC816 /* Headers */,
+				B17DE705A542C63D7B34E20782F37E24 /* Sources */,
+				3F952D1B99603D8DFE2A76C403230016 /* Frameworks */,
+				48F2841B0CBAA4F97EEC2FDE600AB814 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C71EC860AA8039FCBD5620AE22E18421 /* PBXTargetDependency */,
+				94EE5C7D967C6C149D0813B26B403B5A /* PBXTargetDependency */,
 			);
-			name = "Pods-KJPlayerDemo_Example";
-			productName = Pods_KJPlayerDemo_Example;
-			productReference = 4D156F47328A25693059CF2B0C8516DD /* Pods-KJPlayerDemo_Example */;
+			name = "Pods-KJPlayerDemo";
+			productName = Pods_KJPlayerDemo;
+			productReference = 81F88E35C2B5A07A50B4817E0CFF18E8 /* Pods_KJPlayerDemo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9569B6DD68D1EE0003E4A551C5F7F010 /* KJPlayer-KJPlayer */ = {
@@ -526,27 +473,8 @@
 			);
 			name = "KJPlayer-KJPlayer";
 			productName = KJPlayer;
-			productReference = F164C023991D4FA4862ED5F7FC818A31 /* KJPlayer-KJPlayer */;
+			productReference = F164C023991D4FA4862ED5F7FC818A31 /* KJPlayer.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		D9134847B24D822B23FD6198D096F04C /* Pods-KJPlayerDemo_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DF6C25B24AACFE4A6EE2F6F8681B2923 /* Build configuration list for PBXNativeTarget "Pods-KJPlayerDemo_Tests" */;
-			buildPhases = (
-				CA8F83C6946A022C826D3C6036360B4B /* Headers */,
-				8C5668A633119D4A407FF00C8429D844 /* Sources */,
-				7B9AC16D7FABFFD4F97C17EBDB38473D /* Frameworks */,
-				86F9EC1BCB333A119BFCD99FAF6B7356 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2CA5C9B30065E1C32C87862F2C6A30F2 /* PBXTargetDependency */,
-			);
-			name = "Pods-KJPlayerDemo_Tests";
-			productName = Pods_KJPlayerDemo_Tests;
-			productReference = 2F1FE54CF28B6FE507266D079C8AFF43 /* Pods-KJPlayerDemo_Tests */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -555,7 +483,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -566,27 +494,19 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1ABC71B68E2C98BDD9B3ADAFD4A21D6A /* Products */;
+			productRefGroup = 715772F6B2D0A4F2AAFDBA80EAD47F46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0E1165D248E0A59B340A909F5E58BD41 /* KJPlayer */,
 				9569B6DD68D1EE0003E4A551C5F7F010 /* KJPlayer-KJPlayer */,
-				8C3D6F65BF0765452CE0F2421E1BB11A /* Pods-KJPlayerDemo_Example */,
-				D9134847B24D822B23FD6198D096F04C /* Pods-KJPlayerDemo_Tests */,
+				9239F71B0E6383B9D6F4CBE0908388DD /* Pods-KJPlayerDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		86F9EC1BCB333A119BFCD99FAF6B7356 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3FB576B7B5FE7165C3513F0FA581D43 /* Resources */ = {
+		48F2841B0CBAA4F97EEC2FDE600AB814 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -610,26 +530,10 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4BD56540D9A9614E0795C81C670B2BEB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7CAE0A3138130FD3B0AA729BC176D5D7 /* Pods-KJPlayerDemo_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		588BE3AE831F5FA56AE9507C26F0ECD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C5668A633119D4A407FF00C8429D844 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AF6BD4561815313CC51341DB60F6B67 /* Pods-KJPlayerDemo_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,33 +575,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B17DE705A542C63D7B34E20782F37E24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				385939AE6566861EA214F6D5CDC9B8AB /* Pods-KJPlayerDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2CA5C9B30065E1C32C87862F2C6A30F2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-KJPlayerDemo_Example";
-			target = 8C3D6F65BF0765452CE0F2421E1BB11A /* Pods-KJPlayerDemo_Example */;
-			targetProxy = 8404FE83F49C60BFEB754A9A277A3B4C /* PBXContainerItemProxy */;
-		};
 		8122F70E3CC644E4929BA014B79C27B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "KJPlayer-KJPlayer";
 			target = 9569B6DD68D1EE0003E4A551C5F7F010 /* KJPlayer-KJPlayer */;
 			targetProxy = 19F6DEAFA749BF423E533E047451C115 /* PBXContainerItemProxy */;
 		};
-		C71EC860AA8039FCBD5620AE22E18421 /* PBXTargetDependency */ = {
+		94EE5C7D967C6C149D0813B26B403B5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = KJPlayer;
 			target = 0E1165D248E0A59B340A909F5E58BD41 /* KJPlayer */;
-			targetProxy = 26D41021D0EABAFD2CB85F5B64547471 /* PBXContainerItemProxy */;
+			targetProxy = 1322BEF071242351C408123626E11E89 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		19D26D2A2E8BBFE742B7A2C2D3C89E80 /* Release */ = {
+		1BF32C56975B84528EA2267709966CE8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A2423EEAAA668069CA4CD02B2CC760D /* Pods-KJPlayerDemo_Example.release.xcconfig */;
+			baseConfigurationReference = A4F6D788D4E071A88C468101C51B6099 /* Pods-KJPlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -710,12 +616,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KJPlayerDemo_Example/Pods-KJPlayerDemo_Example-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-KJPlayerDemo/Pods-KJPlayerDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KJPlayerDemo_Example/Pods-KJPlayerDemo_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-KJPlayerDemo/Pods-KJPlayerDemo.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -780,84 +686,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		907FE463928794E5834247E5A03915AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 425AA8C8CE06AC47B1085B2A6A005B0B /* Pods-KJPlayerDemo_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMPILER_INDEX_STORE_ENABLE = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KJPlayerDemo_Tests/Pods-KJPlayerDemo_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KJPlayerDemo_Tests/Pods-KJPlayerDemo_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		939E44F41CFA7585960ED8F438E2DDE6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 209816D2EDCFED9D344C732CE6738FA4 /* Pods-KJPlayerDemo_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMPILER_INDEX_STORE_ENABLE = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KJPlayerDemo_Tests/Pods-KJPlayerDemo_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KJPlayerDemo_Tests/Pods-KJPlayerDemo_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -869,7 +705,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/KJPlayer";
 				IBSC_MODULE = KJPlayer;
 				INFOPLIST_FILE = "Target Support Files/KJPlayer/ResourceBundle-KJPlayer-KJPlayer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = KJPlayer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -878,9 +714,9 @@
 			};
 			name = Release;
 		};
-		C57419F7D39399615F5375FE3BC08F09 /* Debug */ = {
+		CD6A1FAD11DD88CC8FFFE53312F6BD4E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 204AF7C51977A508AEF678AA26B7D5AC /* Pods-KJPlayerDemo_Example.debug.xcconfig */;
+			baseConfigurationReference = 8AA8461BCF5D6E99BC92EE48400AA607 /* Pods-KJPlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -893,12 +729,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-KJPlayerDemo_Example/Pods-KJPlayerDemo_Example-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-KJPlayerDemo/Pods-KJPlayerDemo-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-KJPlayerDemo_Example/Pods-KJPlayerDemo_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-KJPlayerDemo/Pods-KJPlayerDemo.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -920,7 +756,7 @@
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/KJPlayer";
 				IBSC_MODULE = KJPlayer;
 				INFOPLIST_FILE = "Target Support Files/KJPlayer/ResourceBundle-KJPlayer-KJPlayer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_NAME = KJPlayer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -982,7 +818,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1012,7 +848,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KJPlayer/KJPlayer-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KJPlayer/KJPlayer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/KJPlayer/KJPlayer.modulemap";
@@ -1046,7 +882,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/KJPlayer/KJPlayer-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/KJPlayer/KJPlayer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/KJPlayer/KJPlayer.modulemap";
@@ -1092,20 +928,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A8B8860727DDC512CD0F3D6DACB1A03D /* Build configuration list for PBXNativeTarget "Pods-KJPlayerDemo_Example" */ = {
+		AC4A64D24CC563F5DAF237301F9BD7F1 /* Build configuration list for PBXNativeTarget "Pods-KJPlayerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C57419F7D39399615F5375FE3BC08F09 /* Debug */,
-				19D26D2A2E8BBFE742B7A2C2D3C89E80 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DF6C25B24AACFE4A6EE2F6F8681B2923 /* Build configuration list for PBXNativeTarget "Pods-KJPlayerDemo_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				907FE463928794E5834247E5A03915AF /* Debug */,
-				939E44F41CFA7585960ED8F438E2DDE6 /* Release */,
+				CD6A1FAD11DD88CC8FFFE53312F6BD4E /* Debug */,
+				1BF32C56975B84528EA2267709966CE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1118,6 +945,7 @@
 			children = (
 				75590A77F93302A7FD566912E6E865F0 /* APlayer.xcdatamodel */,
 			);
+			currentVersion = 75590A77F93302A7FD566912E6E865F0 /* APlayer.xcdatamodel */;
 			name = APlayer.xcdatamodeld;
 			path = Sources/Database/APlayer.xcdatamodeld;
 			sourceTree = "<group>";

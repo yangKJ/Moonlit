@@ -31,6 +31,6 @@ extension KJBasePlayer {
     @objc func playerViewRectChanged(_ notification: Notification) {
         guard let userInfo = notification.userInfo,
               let _ = userInfo[kNotification.playViewRectKey] as? CGRect else { return }
-
+        
     }
 }

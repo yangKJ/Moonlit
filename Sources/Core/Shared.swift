@@ -15,7 +15,7 @@ public protocol SharedInstance: AnyObject {
     static var shared: Player { get set }
 }
 
-public extension SharedInstance where Player: KJBasePlayer {
+extension SharedInstance where Player: KJBasePlayer {
     
     public static var shared: Player {
         get {

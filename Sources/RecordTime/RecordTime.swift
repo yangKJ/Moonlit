@@ -22,7 +22,7 @@ import Foundation
 extension KJBasePlayer {
     
     /// Record last played time protocol, priority is higher than skip title
-    @objc weak var recordDelegate: KJPlayerRecordDelegate? {
+    @objc public weak var recordDelegate: KJPlayerRecordDelegate? {
         get { objc_getAssociatedObject(self, &Keys.recordDelegate) as? KJPlayerRecordDelegate }
         set {
             objc_setAssociatedObject(self, &Keys.recordDelegate, newValue, .OBJC_ASSOCIATION_ASSIGN)

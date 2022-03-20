@@ -11,14 +11,6 @@ import KJPlayer
 
 class AVPlayerViewController: BaseViewController {
     
-    lazy var playerView: KJPlayerView = {
-        let view = KJPlayerView.init(frame: .zero)
-        view.background = UIColor.red.cgColor
-        view.backgroundColor = UIColor.green
-        view.image = UIImage.init(named: "bear")
-        return view
-    }()
-    
     lazy var player: KJAVPlayer = KJAVPlayer.shared
     //lazy var player: KJAVPlayer = KJAVPlayer.init(withPlayerView: playerView)
     
@@ -50,6 +42,16 @@ class AVPlayerViewController: BaseViewController {
         KJAVPlayer.deinitShared()
     }
     
+    func setupUI() {
+        view.addSubview(button)
+        NSLayoutConstraint.activate([
+            button.topAnchor.constraint(equalTo: playerView.bottomAnchor, constant: 20),
+            button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            button.heightAnchor.constraint(equalTo: button.widthAnchor, multiplier: 0.5),
+        ])
+    }
+    
     func setupPlayer() {
         let videoURL = "https://mp4.vjshi.com/2017-11-21/7c2b143eeb27d9f2bf98c4ab03360cfe.mp4"
         let provider = Provider.init(videoURL: videoURL)
@@ -58,23 +60,6 @@ class AVPlayerViewController: BaseViewController {
         player.provider = provider
         
         player.kj_play()
-    }
-    
-    func setupUI() {
-        view.addSubview(playerView)
-        view.addSubview(button)
-        playerView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            playerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            playerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            playerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            playerView.heightAnchor.constraint(equalTo: playerView.widthAnchor, multiplier: 0.5),
-            
-            button.topAnchor.constraint(equalTo: playerView.bottomAnchor, constant: 20),
-            button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            button.heightAnchor.constraint(equalTo: button.widthAnchor, multiplier: 0.5),
-        ])
     }
 }
 

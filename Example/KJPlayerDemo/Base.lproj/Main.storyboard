@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ufw-Lc-R6K">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xbz-hR-dfU">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="HomeViewController" customModule="KJPlayerDemo_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="HomeViewController" customModule="KJPlayerDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -24,12 +25,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="971.01449275362324" y="67.633928571428569"/>
+            <point key="canvasLocation" x="1878.2608695652175" y="67.633928571428569"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--综合测试-->
         <scene sceneID="Ipn-iE-HJ9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ufw-Lc-R6K" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ufw-Lc-R6K" customClass="BaseNavigationController" customModule="KJPlayerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="综合测试" image="scribble" catalog="system" id="9KZ-6w-xqr"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qe9-XQ-a9l">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -42,7 +44,69 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moN-GT-WYC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63.768115942028992" y="67.633928571428569"/>
+            <point key="canvasLocation" x="971.01449275362324" y="67.633928571428569"/>
+        </scene>
+        <!--Unit View Controller-->
+        <scene sceneID="ePh-su-LNk">
+            <objects>
+                <viewController id="gtV-K1-yql" customClass="UnitViewController" customModule="KJPlayerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xa0-ry-xPU"/>
+                        <viewControllerLayoutGuide type="bottom" id="2vV-9D-wcC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9sH-36-fMZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PfO-LF-1d7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ga-l2-8NR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880" y="777"/>
+        </scene>
+        <!--Base Tab Bar Controller-->
+        <scene sceneID="ueX-YY-jrS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Xbz-hR-dfU" customClass="BaseTabBarController" customModule="KJPlayerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VSg-uj-Df6">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ufw-Lc-R6K" kind="relationship" relationship="viewControllers" id="ip6-uH-rUj"/>
+                        <segue destination="gJ0-LA-gYs" kind="relationship" relationship="viewControllers" id="hhd-As-Ogx"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ro-JQ-Ea6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71" y="435"/>
+        </scene>
+        <!--单元测试-->
+        <scene sceneID="mgO-Ck-6wz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gJ0-LA-gYs" customClass="BaseNavigationController" customModule="KJPlayerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="单元测试" image="scribble" catalog="system" id="BEc-60-ghy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nVy-tT-tOx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gtV-K1-yql" kind="relationship" relationship="rootViewController" id="G6A-LH-mta"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRN-zZ-y2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="776"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="scribble" catalog="system" width="128" height="118"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

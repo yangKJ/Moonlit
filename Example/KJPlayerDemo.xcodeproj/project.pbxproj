@@ -7,51 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0718FB5F425CA590FEDC0301 /* Pods_KJPlayerDemo_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E75E781103955B4A5896434 /* Pods_KJPlayerDemo_Tests.framework */; };
-		2E7D499BA3F0186F74023324 /* Pods_KJPlayerDemo_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 619A946B74E3F8BAF1CB2325 /* Pods_KJPlayerDemo_Example.framework */; };
+		3300DCEBBF07BD717EACAD2E /* Pods_KJPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44295B85BFC14629C6F4FB39 /* Pods_KJPlayerDemo.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* HomeViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		681FE5BF2774CE4400B4BFD8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681FE5BE2774CE4400B4BFD8 /* BaseViewController.swift */; };
-		681FE5C32774CE8800B4BFD8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681FE5C22774CE8800B4BFD8 /* HomeViewModel.swift */; };
-		681FE5C52774D07300B4BFD8 /* AVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681FE5C42774D07300B4BFD8 /* AVPlayerViewController.swift */; };
+		68CDF44027E60F89006DA50C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF43E27E60F89006DA50C /* BaseViewController.swift */; };
+		68CDF44127E60F89006DA50C /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF43F27E60F89006DA50C /* BaseNavigationController.swift */; };
+		68CDF44B27E61482006DA50C /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF44A27E61482006DA50C /* BaseTabBarController.swift */; };
+		68CDF45027E6188D006DA50C /* AVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF44F27E6188D006DA50C /* AVPlayerViewController.swift */; };
+		68CDF45527E6189B006DA50C /* UnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF45127E6189B006DA50C /* UnitViewController.swift */; };
+		68CDF45627E6189C006DA50C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF45227E6189B006DA50C /* HomeViewController.swift */; };
+		68CDF45727E6189C006DA50C /* UnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF45327E6189B006DA50C /* UnitViewModel.swift */; };
+		68CDF45827E6189C006DA50C /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF45427E6189B006DA50C /* HomeViewModel.swift */; };
+		68CDF45A27E61918006DA50C /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CDF45927E61918006DA50C /* RecordViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		607FACE61AFB9204008FA782 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = KJPlayerDemo;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		0646C3735247175F49EAE10C /* KJPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KJPlayer.podspec; path = ../KJPlayer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1E75E781103955B4A5896434 /* Pods_KJPlayerDemo_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KJPlayerDemo_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		20A40AF92770120D00A22418 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3460239408C8858C57301E9B /* Pods-KJPlayerDemo_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJPlayerDemo_Example.release.xcconfig"; path = "Target Support Files/Pods-KJPlayerDemo_Example/Pods-KJPlayerDemo_Example.release.xcconfig"; sourceTree = "<group>"; };
+		44295B85BFC14629C6F4FB39 /* Pods_KJPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KJPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C22725C20DFE027AD90805 /* Pods-KJPlayerDemo_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJPlayerDemo_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KJPlayerDemo_Tests/Pods-KJPlayerDemo_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* KJPlayerDemo_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KJPlayerDemo_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* KJPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KJPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* KJPlayerDemo_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KJPlayerDemo_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		619A946B74E3F8BAF1CB2325 /* Pods_KJPlayerDemo_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KJPlayerDemo_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		681FE5BE2774CE4400B4BFD8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		681FE5C22774CE8800B4BFD8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		681FE5C42774D07300B4BFD8 /* AVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewController.swift; sourceTree = "<group>"; };
-		828212A69A962E71FEB287BD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		68CDF43E27E60F89006DA50C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		68CDF43F27E60F89006DA50C /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		68CDF44A27E61482006DA50C /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		68CDF44F27E6188D006DA50C /* AVPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AVPlayerViewController.swift; path = Modules/HomeTest/AVPlayerViewController.swift; sourceTree = "<group>"; };
+		68CDF45127E6189B006DA50C /* UnitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnitViewController.swift; path = Modules/UnitViewController.swift; sourceTree = "<group>"; };
+		68CDF45227E6189B006DA50C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Modules/HomeViewController.swift; sourceTree = "<group>"; };
+		68CDF45327E6189B006DA50C /* UnitViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnitViewModel.swift; path = Modules/UnitViewModel.swift; sourceTree = "<group>"; };
+		68CDF45427E6189B006DA50C /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = Modules/HomeViewModel.swift; sourceTree = "<group>"; };
+		68CDF45927E61918006DA50C /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecordViewController.swift; path = Modules/UnitTest/RecordViewController.swift; sourceTree = "<group>"; };
+		C0160926E4B2E65703736C62 /* Pods-KJPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-KJPlayerDemo/Pods-KJPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D31F7A039BF897B0882C4EB2 /* Pods-KJPlayerDemo_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJPlayerDemo_Tests.release.xcconfig"; path = "Target Support Files/Pods-KJPlayerDemo_Tests/Pods-KJPlayerDemo_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D72D82291C08977D73EBBFDA /* Pods-KJPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJPlayerDemo.release.xcconfig"; path = "Target Support Files/Pods-KJPlayerDemo/Pods-KJPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		DBB919E48F0A13D07A2A80EA /* Pods-KJPlayerDemo_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KJPlayerDemo_Example.debug.xcconfig"; path = "Target Support Files/Pods-KJPlayerDemo_Example/Pods-KJPlayerDemo_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,15 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E7D499BA3F0186F74023324 /* Pods_KJPlayerDemo_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE21AFB9204008FA782 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0718FB5F425CA590FEDC0301 /* Pods_KJPlayerDemo_Tests.framework in Frameworks */,
+				3300DCEBBF07BD717EACAD2E /* Pods_KJPlayerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +64,8 @@
 		42772CE450250BFE22AC8500 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				619A946B74E3F8BAF1CB2325 /* Pods_KJPlayerDemo_Example.framework */,
 				1E75E781103955B4A5896434 /* Pods_KJPlayerDemo_Tests.framework */,
+				44295B85BFC14629C6F4FB39 /* Pods_KJPlayerDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -87,9 +73,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for KJPlayerDemo */,
-				607FACE81AFB9204008FA782 /* Tests */,
+				607FACD21AFB9204008FA782 /* KJPlayerDemo */,
 				607FACD11AFB9204008FA782 /* Products */,
 				E5A7D6925FE849D9E6F776A4 /* Pods */,
 				42772CE450250BFE22AC8500 /* Frameworks */,
@@ -99,24 +83,20 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* KJPlayerDemo_Example.app */,
-				607FACE51AFB9204008FA782 /* KJPlayerDemo_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* KJPlayerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for KJPlayerDemo */ = {
+		607FACD21AFB9204008FA782 /* KJPlayerDemo */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				681FE5BE2774CE4400B4BFD8 /* BaseViewController.swift */,
-				607FACD71AFB9204008FA782 /* HomeViewController.swift */,
-				681FE5C22774CE8800B4BFD8 /* HomeViewModel.swift */,
+				68CDF43D27E60F89006DA50C /* Base */,
 				681FE5BD2774CDF500B4BFD8 /* Modules */,
 				681FE5BC2774CDD100B4BFD8 /* Resources */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for KJPlayerDemo";
 			path = KJPlayerDemo;
 			sourceTree = "<group>";
 		};
@@ -126,33 +106,6 @@
 				607FACD41AFB9204008FA782 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				0646C3735247175F49EAE10C /* KJPlayer.podspec */,
-				828212A69A962E71FEB287BD /* LICENSE */,
-				20A40AF92770120D00A22418 /* README.md */,
-			);
-			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
 		681FE5BC2774CDD100B4BFD8 /* Resources */ = {
@@ -168,17 +121,40 @@
 		681FE5BD2774CDF500B4BFD8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				681FE5C12774CE6000B4BFD8 /* AVPlayer */,
+				68CDF45227E6189B006DA50C /* HomeViewController.swift */,
+				68CDF45427E6189B006DA50C /* HomeViewModel.swift */,
+				68CDF45127E6189B006DA50C /* UnitViewController.swift */,
+				68CDF45327E6189B006DA50C /* UnitViewModel.swift */,
+				68CDF44E27E61831006DA50C /* HomeTest */,
+				68CDF43927E60C29006DA50C /* UnitTest */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
 		};
-		681FE5C12774CE6000B4BFD8 /* AVPlayer */ = {
+		68CDF43927E60C29006DA50C /* UnitTest */ = {
 			isa = PBXGroup;
 			children = (
-				681FE5C42774D07300B4BFD8 /* AVPlayerViewController.swift */,
+				68CDF45927E61918006DA50C /* RecordViewController.swift */,
 			);
-			name = AVPlayer;
+			name = UnitTest;
+			sourceTree = "<group>";
+		};
+		68CDF43D27E60F89006DA50C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				68CDF43F27E60F89006DA50C /* BaseNavigationController.swift */,
+				68CDF44A27E61482006DA50C /* BaseTabBarController.swift */,
+				68CDF43E27E60F89006DA50C /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		68CDF44E27E61831006DA50C /* HomeTest */ = {
+			isa = PBXGroup;
+			children = (
+				68CDF44F27E6188D006DA50C /* AVPlayerViewController.swift */,
+			);
+			name = HomeTest;
 			sourceTree = "<group>";
 		};
 		E5A7D6925FE849D9E6F776A4 /* Pods */ = {
@@ -188,6 +164,8 @@
 				3460239408C8858C57301E9B /* Pods-KJPlayerDemo_Example.release.xcconfig */,
 				53C22725C20DFE027AD90805 /* Pods-KJPlayerDemo_Tests.debug.xcconfig */,
 				D31F7A039BF897B0882C4EB2 /* Pods-KJPlayerDemo_Tests.release.xcconfig */,
+				C0160926E4B2E65703736C62 /* Pods-KJPlayerDemo.debug.xcconfig */,
+				D72D82291C08977D73EBBFDA /* Pods-KJPlayerDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -195,9 +173,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* KJPlayerDemo_Example */ = {
+		607FACCF1AFB9204008FA782 /* KJPlayerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KJPlayerDemo_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KJPlayerDemo" */;
 			buildPhases = (
 				2B06054777E3005CA39988A1 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -209,29 +187,10 @@
 			);
 			dependencies = (
 			);
-			name = KJPlayerDemo_Example;
+			name = KJPlayerDemo;
 			productName = KJPlayerDemo;
-			productReference = 607FACD01AFB9204008FA782 /* KJPlayerDemo_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* KJPlayerDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		607FACE41AFB9204008FA782 /* KJPlayerDemo_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KJPlayerDemo_Tests" */;
-			buildPhases = (
-				E71FB0272792146A1AA4EAE5 /* [CP] Check Pods Manifest.lock */,
-				607FACE11AFB9204008FA782 /* Sources */,
-				607FACE21AFB9204008FA782 /* Frameworks */,
-				607FACE31AFB9204008FA782 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
-			);
-			name = KJPlayerDemo_Tests;
-			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* KJPlayerDemo_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -240,17 +199,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-					};
-					607FACE41AFB9204008FA782 = {
-						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
-						TestTargetID = 607FACCF1AFB9204008FA782;
+						DevelopmentTeam = 66T6NB6T4J;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -267,8 +222,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* KJPlayerDemo_Example */,
-				607FACE41AFB9204008FA782 /* KJPlayerDemo_Tests */,
+				607FACCF1AFB9204008FA782 /* KJPlayerDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -281,13 +235,6 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE31AFB9204008FA782 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +256,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KJPlayerDemo_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KJPlayerDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -322,7 +269,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KJPlayerDemo_Example/Pods-KJPlayerDemo_Example-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-KJPlayerDemo/Pods-KJPlayerDemo-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/KJPlayer/KJPlayer.bundle",
 				"${BUILT_PRODUCTS_DIR}/KJPlayer/KJPlayer.framework/APlayer.momd",
 			);
@@ -333,29 +280,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KJPlayerDemo_Example/Pods-KJPlayerDemo_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E71FB0272792146A1AA4EAE5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KJPlayerDemo_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KJPlayerDemo/Pods-KJPlayerDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -365,31 +290,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				681FE5C52774D07300B4BFD8 /* AVPlayerViewController.swift in Sources */,
-				607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */,
+				68CDF45027E6188D006DA50C /* AVPlayerViewController.swift in Sources */,
+				68CDF45827E6189C006DA50C /* HomeViewModel.swift in Sources */,
+				68CDF44B27E61482006DA50C /* BaseTabBarController.swift in Sources */,
+				68CDF45727E6189C006DA50C /* UnitViewModel.swift in Sources */,
+				68CDF44027E60F89006DA50C /* BaseViewController.swift in Sources */,
+				68CDF44127E60F89006DA50C /* BaseNavigationController.swift in Sources */,
+				68CDF45527E6189B006DA50C /* UnitViewController.swift in Sources */,
+				68CDF45A27E61918006DA50C /* RecordViewController.swift in Sources */,
+				68CDF45627E6189C006DA50C /* HomeViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				681FE5BF2774CE4400B4BFD8 /* BaseViewController.swift in Sources */,
-				681FE5C32774CE8800B4BFD8 /* HomeViewModel.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		607FACE11AFB9204008FA782 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* KJPlayerDemo_Example */;
-			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -423,14 +337,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -456,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -476,14 +393,17 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -502,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -512,73 +432,34 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBB919E48F0A13D07A2A80EA /* Pods-KJPlayerDemo_Example.debug.xcconfig */;
+			baseConfigurationReference = C0160926E4B2E65703736C62 /* Pods-KJPlayerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 66T6NB6T4J;
 				INFOPLIST_FILE = KJPlayerDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3460239408C8858C57301E9B /* Pods-KJPlayerDemo_Example.release.xcconfig */;
+			baseConfigurationReference = D72D82291C08977D73EBBFDA /* Pods-KJPlayerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KJPlayerDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		607FACF31AFB9204008FA782 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53C22725C20DFE027AD90805 /* Pods-KJPlayerDemo_Tests.debug.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KJPlayerDemo_Example.app/KJPlayerDemo_Example";
-			};
-			name = Debug;
-		};
-		607FACF41AFB9204008FA782 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D31F7A039BF897B0882C4EB2 /* Pods-KJPlayerDemo_Tests.release.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KJPlayerDemo_Example.app/KJPlayerDemo_Example";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -594,20 +475,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KJPlayerDemo_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KJPlayerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
 				607FACF11AFB9204008FA782 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KJPlayerDemo_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				607FACF31AFB9204008FA782 /* Debug */,
-				607FACF41AFB9204008FA782 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -19,7 +19,7 @@ enum ViewControllerType: String {
     }
 }
 
-class HomeViewModel: NSObject {
+struct HomeViewModel {
 
     let datas: [ViewControllerType] = {
         return [

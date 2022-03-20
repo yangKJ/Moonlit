@@ -7,7 +7,7 @@
 
 import Foundation
 import AVFoundation
-import AVKit
+@_exported import AVKit
 
 /// 开启画中画协议，该功能只有`AVPlayer`内核才具有
 /// Open the Picture-in-Picture protocol, this function is only available in the `AVPlayer` kernel
@@ -33,7 +33,7 @@ import AVKit
 
 extension KJAVPlayer {
     
-    @objc weak var pipDelegate: KJPlayerPipDelegate? {
+    @objc public weak var pipDelegate: KJPlayerPipDelegate? {
         get { objc_getAssociatedObject(self, &Keys.pipDelegate) as? KJPlayerPipDelegate }
         set { objc_setAssociatedObject(self, &Keys.pipDelegate, newValue, .OBJC_ASSOCIATION_ASSIGN) }
     }

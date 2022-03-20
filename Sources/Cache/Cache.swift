@@ -30,7 +30,7 @@ import Foundation
 extension KJBasePlayer {
     
     /// Video caching protocol
-    @objc weak var cacheDelegate: KJPlayerCacheDelegate? {
+    @objc public weak var cacheDelegate: KJPlayerCacheDelegate? {
         get { objc_getAssociatedObject(self, &Keys.cacheDelegate) as? KJPlayerCacheDelegate }
         set {
             objc_setAssociatedObject(self, &Keys.cacheDelegate, newValue, .OBJC_ASSOCIATION_ASSIGN)

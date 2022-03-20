@@ -2,12 +2,9 @@ use_frameworks!
 
 platform :ios, '10.0'
 
-target 'KJPlayerDemo_Example' do
+target 'KJPlayerDemo' do
   pod 'KJPlayer', :path => '..'
   
-  target 'KJPlayerDemo_Tests' do
-    inherit! :search_paths
-  end
 end
 
 inhibit_all_warnings!
