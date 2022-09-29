@@ -58,7 +58,7 @@ extension BridgeMethod {
     }
     
     internal static func skipTime(_ player: KJBasePlayer) -> TimeInterval {
-        
+        // TODO: - 跳过片头播放
         return 10.0
     }
 }

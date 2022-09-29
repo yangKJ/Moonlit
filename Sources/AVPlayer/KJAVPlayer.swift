@@ -8,12 +8,13 @@
 import Foundation
 import AVFoundation
 
-@objc public class KJAVPlayer: KJBasePlayer, SharedInstance {
+@objc(KJAVPlayer)
+public class KJAVPlayer: KJBasePlayer, SharedInstance {
     private var timeObserver: Any? = nil
     
     public typealias Player = KJAVPlayer
     
-    public private(set) var videoPlayer: AVPlayer? {
+    @objc public private(set) var videoPlayer: AVPlayer? {
         didSet {
             if let videoPlayer = videoPlayer {
                 videoPlayer.usesExternalPlaybackWhileExternalScreenIsActive = true
@@ -21,7 +22,7 @@ import AVFoundation
         }
     }
     
-    public private(set) var playerLayer: AVPlayerLayer? {
+    @objc public private(set) var playerLayer: AVPlayerLayer? {
         didSet {
             guard let playerLayer = playerLayer, let view = playerView else {
                 return
@@ -48,7 +49,7 @@ import AVFoundation
     }
     
     /// Media Resource Management Object
-    public private(set) var playerItem: AVPlayerItem? {
+    @objc public private(set) var playerItem: AVPlayerItem? {
         didSet {
             if let item = playerItem {
                 item.addObserver(self, forKeyPath: KJAVPlayer.Keys.status, options: .new, context: nil)
@@ -72,7 +73,7 @@ import AVFoundation
     }
     
     // MARK: - override method
-    public override var muted: Bool {
+    @objc public override var muted: Bool {
         didSet {
             if let videoPlayer = videoPlayer {
                 videoPlayer.isMuted = muted
@@ -80,7 +81,7 @@ import AVFoundation
         }
     }
     
-    public override var speed: Float {
+    @objc public override var speed: Float {
         didSet {
             guard let videoPlayer = videoPlayer, fabsf(videoPlayer.rate) > 0.00001 else {
                 return
@@ -90,7 +91,7 @@ import AVFoundation
         }
     }
     
-    public override var volume: Float {
+    @objc public override var volume: Float {
         didSet {
             guard let videoPlayer = videoPlayer else {
                 return
@@ -100,7 +101,7 @@ import AVFoundation
         }
     }
     
-    public override var provider: Provider? {
+    @objc public override var provider: Provider? {
         didSet {
             guard let provider = provider else {
                 return
@@ -290,17 +291,17 @@ extension KJAVPlayer {
 // MARK: - KJPlayer Protocol
 extension KJAVPlayer {
     
-    public override func kj_replay() {
+    @objc public override func kj_replay() {
         super.kj_replay()
         self.playerStatus = .beginPlay
     }
     
-    public override func kj_stop() {
+    @objc public override func kj_stop() {
         super.kj_stop()
         self.resetVideoPlayer()
     }
     
-    public override func kj_appointTime(_ time: TimeInterval) {
+    @objc public override func kj_appointTime(_ time: TimeInterval) {
         super.kj_appointTime(time)
         self.seekTime(time)
     }

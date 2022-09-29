@@ -31,23 +31,20 @@ import CoreData
 
 @objc(PlayerVideoData)
 public class PlayerVideoData: NSManagedObject {
-    
     /// `ENTITIES` table name
     static let entityName = "Video"
 }
 
 extension PlayerVideoData {
-
+    
     @nonobjc public class func fetchRequest() -> NSFetchRequest<PlayerVideoData> {
-        return NSFetchRequest<PlayerVideoData>(entityName: PlayerVideoData.entityName)
+        return NSFetchRequest<PlayerVideoData>(entityName: Self.entityName)
     }
     
     @nonobjc public class func insertNewObject(context: NSManagedObjectContext) -> PlayerVideoData? {
-        let model = NSEntityDescription.insertNewObject(forEntityName: PlayerVideoData.entityName,
-                                                        into: context) as? PlayerVideoData
-        return model
+        return NSEntityDescription.insertNewObject(forEntityName: Self.entityName, into: context) as? Self
     }
-
+    
     /// Primary key ID, video link remove SCHEME and then MD5
     @NSManaged public var dbid: String?
     /// The primary key of the associated `Record` table
@@ -71,7 +68,7 @@ extension PlayerVideoData {
 }
 
 extension PlayerVideoData {
-
+    
     /// Get video total time
     public static func videoTotalTime(with dbid: String) -> TimeInterval {
         if let data = DatabaseManager.queryOne(with: dbid) {

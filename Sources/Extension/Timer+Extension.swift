@@ -12,6 +12,16 @@ import Foundation
 public extension Timer {
     
     /// Circular referenced timers resolved
+    ///
+    /// Example:
+    ///
+    ///     self.timer = Timer.kj_scheduledTimer(withTimeInterval: time ?? 1,
+    ///                                          repeats: true,
+    ///                                          block: { [weak self] (timer) in
+    ///         guard let `self` = self else { return }
+    ///         // do something...
+    ///     })
+    ///
     /// - Parameters:
     ///  - interval: time interval
     ///  - repeats: whether to repeat
@@ -46,13 +56,3 @@ public extension Timer {
         }
     }
 }
-
-/// Example:
-///
-///     self.timer = Timer.kj_scheduledTimer(withTimeInterval: time ?? 1,
-///                                          repeats: true,
-///                                          block: { [weak self] (timer) in
-///         guard let `self` = self else { return }
-///         // do something...
-///     })
-///

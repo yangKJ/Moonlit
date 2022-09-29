@@ -14,9 +14,12 @@ import UIKit
     
     public var mapString: String {
         switch self {
-        case .playing: return "playing"
-        case .paused: return "paused"
-        @unknown default: return ""
+        case .playing:
+            return "playing"
+        case .paused:
+            return "paused"
+        @unknown default:
+            return ""
         }
     }
     

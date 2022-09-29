@@ -8,22 +8,23 @@
 import Foundation
 import UIKit
 
-@objcMembers open class KJBasePlayer: NSObject {
+@objc(KJBasePlayer)
+open class KJBasePlayer: NSObject {
     
-    public weak var delegate: KJPlayerDelegate?
+    @objc public weak var delegate: KJPlayerDelegate?
     /// Player control
-    public weak var playerView: KJPlayerView?
+    @objc public weak var playerView: KJPlayerView?
     /// Configuration information.
-    public var provider: Provider? = nil
+    @objc public var provider: Provider? = nil
     
     /// Play speed, 0 ~ 2.
-    public var speed: Float = 1.0
+    @objc public var speed: Float = 1.0
     /// is mute
-    public var muted: Bool = false
+    @objc public var muted: Bool = false
     /// play volume
-    public var volume: Float = 1.0
+    @objc public var volume: Float = 1.0
     /// Whether to open auto play
-    public var autoPlay: Bool = true
+    @objc public var autoPlay: Bool = true
     
     // MARK: - private
     private var _originalURL: NSURL? = nil
@@ -33,12 +34,12 @@ import UIKit
     private var replay: Bool = false
     private var playing: Bool = false
     
-    public convenience init(withPlayerView view: KJPlayerView) {
+    @objc public convenience init(withPlayerView view: KJPlayerView) {
         self.init()
         self.playerView = view
     }
     
-    public required override init() {
+    @objc public required override init() {
         super.init()
         self.setupTimer(1)
         self.setupNotification()
@@ -141,21 +142,18 @@ import UIKit
             } else {
                 return
             }
-            if let function = self.delegate?.kj_player(_:state:) {
-                DispatchQueue.main.async {
-                    function(self, state!)
-                }
+            DispatchQueue.main.async {
+                self.delegate?.kj_player(_:state:)?(self, state!)
             }
         }
     }
     
     internal var currentTimeObserve: TimeInterval? = 0.0 {
         willSet {
-            guard let newTime = newValue else { return }
-            guard let oldTime = currentTimeObserve else { return }
-            if newTime != oldTime, let function = self.delegate?.kj_player(_:current:) {
+            guard let newTime = newValue, let oldTime = currentTimeObserve else { return }
+            if newTime != oldTime {
                 DispatchQueue.main.async {
-                    function(self, newTime)
+                    self.delegate?.kj_player(_:current:)?(self, newTime)
                 }
             }
         }
@@ -163,11 +161,10 @@ import UIKit
     
     internal var loadedTimeObserve: TimeInterval? = 0.0 {
         willSet {
-            guard let newTime = newValue else { return }
-            guard let oldTime = loadedTimeObserve else { return }
-            if newTime != oldTime, newTime > 0, let function = self.delegate?.kj_player(_:loadedTime:) {
+            guard let newTime = newValue, let oldTime = loadedTimeObserve else { return }
+            if newTime != oldTime, newTime > 0 {
                 DispatchQueue.main.async {
-                    function(self, newTime)
+                    self.delegate?.kj_player(_:loadedTime:)?(self, newTime)
                 }
             }
         }
@@ -175,11 +172,10 @@ import UIKit
     
     internal var totalTimeObserve: TimeInterval? = 0.0 {
         willSet {
-            guard let newTime = newValue else { return }
-            guard let oldTime = totalTimeObserve else { return }
-            if newTime != oldTime, newTime > 0, let function = self.delegate?.kj_player(_:total:) {
+            guard let newTime = newValue, let oldTime = totalTimeObserve else { return }
+            if newTime != oldTime, newTime > 0 {
                 DispatchQueue.main.async {
-                    function(self, newTime)
+                    self.delegate?.kj_player(_:total:)?(self, newTime)
                 }
             }
         }
@@ -187,11 +183,10 @@ import UIKit
     
     internal var videoSizeObserve: CGSize? = .zero {
         willSet {
-            guard let newVideoSize = newValue else { return }
-            guard let oldVideoSize = videoSizeObserve else { return }
-            if newVideoSize != oldVideoSize, let function = self.delegate?.kj_player(_:videoSize:) {
+            guard let newVideoSize = newValue, let oldVideoSize = videoSizeObserve else { return }
+            if newVideoSize != oldVideoSize {
                 DispatchQueue.main.async {
-                    function(self, newVideoSize)
+                    self.delegate?.kj_player(_:videoSize:)?(self, newVideoSize)
                 }
             }
         }
@@ -199,25 +194,20 @@ import UIKit
     
     internal var playFailedObserve: NSError? = nil {
         willSet {
-            guard let newError = newValue else { return }
-            guard let oldError = playFailedObserve else { return }
-            if newError != oldError, let function = self.delegate?.kj_player(_:playFailed:) {
-                DispatchQueue.main.async {
-                    function(self, newError)
-                }
+            guard let newError = newValue, let oldError = playFailedObserve else { return }
+            if newError != oldError {
+                self.delegate?.kj_player(_:playFailed:)?(self, newError)
             }
         }
     }
-
+    
     /// End of play observer
     private var playFinishedTimeObserve: TimeInterval? {
         willSet {
             guard let newTime = newValue else { return }
-            if playFinishedTimeObserve == nil || newTime != playFinishedTimeObserve {
-                if let function = self.delegate?.kj_player(_:playFinished:), newTime > 0 {
-                    DispatchQueue.main.async {
-                        function(self, newTime)
-                    }
+            if (playFinishedTimeObserve == nil || newTime != playFinishedTimeObserve) && newTime > 0 {
+                DispatchQueue.main.async {
+                    self.delegate?.kj_player(_:playFinished:)?(self, newTime)
                 }
             }
         }
@@ -225,16 +215,16 @@ import UIKit
 }
 
 extension KJBasePlayer: KJPlayer {
-    public var currentTime: TimeInterval { return self.currentTimeObserve! }
-    public var totalTime: TimeInterval { return self.totalTimeObserve! }
-    public var videoSize: CGSize { return self.videoSizeObserve! }
-    public var originalURL: NSURL? { return self._originalURL }
-    public var playURL: NSURL? { return self._playURL }
-    public var isPlaying: Bool { return self.playing }
-    public var isUserPause: Bool { return self.userPause }
-    public var isOnlineSource: Bool { return self.localed }
-    public var isReplay: Bool { return self.replay }
-    public var loadedProgress: Float {
+    @objc public var currentTime: TimeInterval { return self.currentTimeObserve! }
+    @objc public var totalTime: TimeInterval { return self.totalTimeObserve! }
+    @objc public var videoSize: CGSize { return self.videoSizeObserve! }
+    @objc public var originalURL: NSURL? { return self._originalURL }
+    @objc public var playURL: NSURL? { return self._playURL }
+    @objc public var isPlaying: Bool { return self.playing }
+    @objc public var isUserPause: Bool { return self.userPause }
+    @objc public var isOnlineSource: Bool { return self.localed }
+    @objc public var isReplay: Bool { return self.replay }
+    @objc public var loadedProgress: Float {
         if self.isOnlineSource == false {
             return 1.0
         }
@@ -244,7 +234,7 @@ extension KJBasePlayer: KJPlayer {
         return Float(min(self.loadedTimeObserve! / self.totalTime, 1))
     }
     
-    public var isLiveStreaming: Bool {
+    @objc public var isLiveStreaming: Bool {
         if let videoURL = self._originalURL {
             return Common.Function.videoAesset(videoURL) == .HLS
         } else {
@@ -252,33 +242,31 @@ extension KJBasePlayer: KJPlayer {
         }
     }
     
-    public func kj_play() {
+    @objc public func kj_play() {
         self.userPause = false
         self.playerStatus = .beginPlay
     }
     
-    public func kj_replay() {
+    @objc public func kj_replay() {
         self.replay = true
         self.userPause = false
         let time = BridgeMethod.skipTime(self)
         self.kj_appointTime(time)
     }
     
-    public func kj_pause() {
+    @objc public func kj_pause() {
         self.userPause = true
         self.playerStatus = .paused(user: true)
     }
     
-    public func kj_stop() {
+    @objc public func kj_stop() {
         self.userPause = false
-        if let function = self.delegate?.kj_player(_:stopped:) {
-            DispatchQueue.main.async {
-                function(self, self.currentTime)
-            }
+        DispatchQueue.main.async {
+            self.delegate?.kj_player(_:stopped:)?(self, self.currentTime)
         }
     }
     
-    public func kj_appointTime(_ time: TimeInterval) {
+    @objc public func kj_appointTime(_ time: TimeInterval) {
         self.currentTimeObserve = time
     }
 }

@@ -47,8 +47,7 @@ public struct DatabaseManager {
                 model.videoData = data.videoData ?? model.videoData
                 model.videoFormat = data.videoFormat ?? model.videoFormat
                 model.videoUrl = data.videoUrl ?? model.videoUrl
-                model.videoDownloaded = model.videoDownloaded == data.videoDownloaded ?
-                model.videoDownloaded : model.videoDownloaded
+                model.videoDownloaded = model.videoDownloaded == data.videoDownloaded ? model.videoDownloaded : model.videoDownloaded
                 if data.saveTime > 0 { model.saveTime = data.saveTime }
                 if data.videoContentLength > 0 { model.videoContentLength = data.videoContentLength }
                 if data.videoTotalTime > 0 { model.videoTotalTime = data.videoTotalTime }

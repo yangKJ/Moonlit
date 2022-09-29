@@ -28,8 +28,7 @@ extension DatabaseManager.Configuration {
     
     static func context() -> NSManagedObjectContext? {
         guard ctx == nil else { return ctx! }
-        let url = Bundle.main.url(forResource: DatabaseManager.Configuration.resourceName,
-                                  withExtension: "momd")
+        let url = Bundle.main.url(forResource: Self.resourceName, withExtension: "momd")
         guard let url = url, let model = NSManagedObjectModel(contentsOf: url) else { return nil }
         if #available(iOS 10.0, *) {
             let persisContext = NSPersistentContainer(name: PlayerVideoData.entityName, managedObjectModel: model)
