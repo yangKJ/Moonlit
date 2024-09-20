@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import KJPlayer
 
 class DetailViewController: UIViewController {
 

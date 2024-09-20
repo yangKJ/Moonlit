@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8753267D29CAAB700030F655 /* APlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8753264B29CAAB700030F655 /* APlayer.xcdatamodeld */; };
+		8753267E29CAAB700030F655 /* PlayerVideoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753264D29CAAB700030F655 /* PlayerVideoData.swift */; };
+		8753267F29CAAB700030F655 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753264E29CAAB700030F655 /* DatabaseManager.swift */; };
+		8753268029CAAB700030F655 /* DatabaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753264F29CAAB700030F655 /* DatabaseConfiguration.swift */; };
+		8753268129CAAB700030F655 /* FreeTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265129CAAB700030F655 /* FreeTime.swift */; };
+		8753268229CAAB700030F655 /* Screenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265329CAAB700030F655 /* Screenshots.swift */; };
+		8753268329CAAB700030F655 /* Bridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265529CAAB700030F655 /* Bridge.swift */; };
+		8753268429CAAB700030F655 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265629CAAB700030F655 /* Protocol.swift */; };
+		8753268529CAAB700030F655 /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265729CAAB700030F655 /* Shared.swift */; };
+		8753268629CAAB700030F655 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265829CAAB700030F655 /* Provider.swift */; };
+		8753268729CAAB700030F655 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265929CAAB700030F655 /* Timer.swift */; };
+		8753268829CAAB700030F655 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265A29CAAB700030F655 /* Notification.swift */; };
+		8753268929CAAB700030F655 /* KJBasePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265B29CAAB700030F655 /* KJBasePlayer.swift */; };
+		8753268A29CAAB700030F655 /* KJPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265C29CAAB700030F655 /* KJPlayer.swift */; };
+		8753268B29CAAB700030F655 /* KJPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265D29CAAB700030F655 /* KJPlayerView.swift */; };
+		8753268C29CAAB700030F655 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265E29CAAB700030F655 /* Function.swift */; };
+		8753268D29CAAB700030F655 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753265F29CAAB700030F655 /* Enum.swift */; };
+		8753268E29CAAB700030F655 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753266129CAAB700030F655 /* Common.swift */; };
+		8753268F29CAAB700030F655 /* Timer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753266229CAAB700030F655 /* Timer+Extension.swift */; };
+		8753269029CAAB700030F655 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753266429CAAB700030F655 /* CacheManager.swift */; };
+		8753269129CAAB700030F655 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753266529CAAB700030F655 /* Cache.swift */; };
+		8753269229CAAB700030F655 /* KJDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8753266729CAAB700030F655 /* KJDownloader.m */; };
+		8753269329CAAB700030F655 /* KJPlayer-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 8753266829CAAB700030F655 /* KJPlayer-Bridging-Header.h */; };
+		8753269429CAAB700030F655 /* KJDownloaderCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 8753266929CAAB700030F655 /* KJDownloaderCommon.m */; };
+		8753269529CAAB700030F655 /* KJFileHandleInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8753266A29CAAB700030F655 /* KJFileHandleInfo.m */; };
+		8753269629CAAB700030F655 /* KJFileHandleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8753266B29CAAB700030F655 /* KJFileHandleManager.m */; };
+		8753269729CAAB700030F655 /* KJDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8753266C29CAAB700030F655 /* KJDownloader.h */; };
+		8753269829CAAB700030F655 /* KJFileHandleInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8753266D29CAAB700030F655 /* KJFileHandleInfo.h */; };
+		8753269929CAAB700030F655 /* KJDownloaderCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 8753266E29CAAB700030F655 /* KJDownloaderCommon.h */; };
+		8753269A29CAAB700030F655 /* KJFileHandleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8753266F29CAAB700030F655 /* KJFileHandleManager.h */; };
+		8753269B29CAAB700030F655 /* KJAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753267129CAAB700030F655 /* KJAVPlayer.swift */; };
+		8753269C29CAAB700030F655 /* PictureInPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753267329CAAB700030F655 /* PictureInPicture.swift */; };
+		8753269E29CAAB700030F655 /* SkipTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753267729CAAB700030F655 /* SkipTime.swift */; };
+		8753269F29CAAB700030F655 /* RecordTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753267929CAAB700030F655 /* RecordTime.swift */; };
+		875326A029CAAB700030F655 /* RecordTimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8753267A29CAAB700030F655 /* RecordTimeData.swift */; };
+		875326AC29CAAD940030F655 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 875326AA29CAAD940030F655 /* README.md */; };
+		875326AD29CAAD940030F655 /* KJPlayer.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 875326AB29CAAD940030F655 /* KJPlayer.podspec */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8753264C29CAAB700030F655 /* APlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = APlayer.xcdatamodel; sourceTree = "<group>"; };
+		8753264D29CAAB700030F655 /* PlayerVideoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerVideoData.swift; sourceTree = "<group>"; };
+		8753264E29CAAB700030F655 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		8753264F29CAAB700030F655 /* DatabaseConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseConfiguration.swift; sourceTree = "<group>"; };
+		8753265129CAAB700030F655 /* FreeTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeTime.swift; sourceTree = "<group>"; };
+		8753265329CAAB700030F655 /* Screenshots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screenshots.swift; sourceTree = "<group>"; };
+		8753265529CAAB700030F655 /* Bridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bridge.swift; sourceTree = "<group>"; };
+		8753265629CAAB700030F655 /* Protocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		8753265729CAAB700030F655 /* Shared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		8753265829CAAB700030F655 /* Provider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		8753265929CAAB700030F655 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		8753265A29CAAB700030F655 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		8753265B29CAAB700030F655 /* KJBasePlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KJBasePlayer.swift; sourceTree = "<group>"; };
+		8753265C29CAAB700030F655 /* KJPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KJPlayer.swift; sourceTree = "<group>"; };
+		8753265D29CAAB700030F655 /* KJPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KJPlayerView.swift; sourceTree = "<group>"; };
+		8753265E29CAAB700030F655 /* Function.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		8753265F29CAAB700030F655 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		8753266129CAAB700030F655 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		8753266229CAAB700030F655 /* Timer+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+Extension.swift"; sourceTree = "<group>"; };
+		8753266429CAAB700030F655 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		8753266529CAAB700030F655 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		8753266729CAAB700030F655 /* KJDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDownloader.m; sourceTree = "<group>"; };
+		8753266829CAAB700030F655 /* KJPlayer-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KJPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
+		8753266929CAAB700030F655 /* KJDownloaderCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJDownloaderCommon.m; sourceTree = "<group>"; };
+		8753266A29CAAB700030F655 /* KJFileHandleInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJFileHandleInfo.m; sourceTree = "<group>"; };
+		8753266B29CAAB700030F655 /* KJFileHandleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJFileHandleManager.m; sourceTree = "<group>"; };
+		8753266C29CAAB700030F655 /* KJDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDownloader.h; sourceTree = "<group>"; };
+		8753266D29CAAB700030F655 /* KJFileHandleInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJFileHandleInfo.h; sourceTree = "<group>"; };
+		8753266E29CAAB700030F655 /* KJDownloaderCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJDownloaderCommon.h; sourceTree = "<group>"; };
+		8753266F29CAAB700030F655 /* KJFileHandleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJFileHandleManager.h; sourceTree = "<group>"; };
+		8753267129CAAB700030F655 /* KJAVPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KJAVPlayer.swift; sourceTree = "<group>"; };
+		8753267329CAAB700030F655 /* PictureInPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureInPicture.swift; sourceTree = "<group>"; };
+		8753267729CAAB700030F655 /* SkipTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkipTime.swift; sourceTree = "<group>"; };
+		8753267929CAAB700030F655 /* RecordTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTime.swift; sourceTree = "<group>"; };
+		8753267A29CAAB700030F655 /* RecordTimeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordTimeData.swift; sourceTree = "<group>"; };
+		875326AA29CAAD940030F655 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		875326AB29CAAD940030F655 /* KJPlayer.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KJPlayer.podspec; sourceTree = "<group>"; };
+		875326AF29CAAEBD0030F655 /* KJPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KJPlayer.framework; path = "/Users/a2019/Desktop/Git/Moonlit/build/Debug-iphoneos/KJPlayer.framework"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		873B7E5329CAA93C004ACFE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		873B7E4C29CAA93C004ACFE5 = {
+			isa = PBXGroup;
+			children = (
+				875326AB29CAAD940030F655 /* KJPlayer.podspec */,
+				875326AA29CAAD940030F655 /* README.md */,
+				8753264929CAAB700030F655 /* Sources */,
+			);
+			sourceTree = "<group>";
+		};
+		8753264929CAAB700030F655 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8753265429CAAB700030F655 /* Core */,
+				875326A729CAAC8C0030F655 /* Kernel  */,
+				875326A829CAACDA0030F655 /* Protocols */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8753264A29CAAB700030F655 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8753264B29CAAB700030F655 /* APlayer.xcdatamodeld */,
+				8753264F29CAAB700030F655 /* DatabaseConfiguration.swift */,
+				8753264E29CAAB700030F655 /* DatabaseManager.swift */,
+				8753264D29CAAB700030F655 /* PlayerVideoData.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		8753265029CAAB700030F655 /* FreeTime */ = {
+			isa = PBXGroup;
+			children = (
+				8753265129CAAB700030F655 /* FreeTime.swift */,
+			);
+			path = FreeTime;
+			sourceTree = "<group>";
+		};
+		8753265429CAAB700030F655 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				875326B129CAE56A0030F655 /* Base */,
+				8753264A29CAAB700030F655 /* Database */,
+				8753266629CAAB700030F655 /* Downloader */,
+				8753266029CAAB700030F655 /* Extensions */,
+				875326A929CAAD5B0030F655 /* Setup */,
+				875326B029CAE4460030F655 /* View */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8753266029CAAB700030F655 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8753266229CAAB700030F655 /* Timer+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8753266329CAAB700030F655 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				8753266529CAAB700030F655 /* Cache.swift */,
+				8753266429CAAB700030F655 /* CacheManager.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		8753266629CAAB700030F655 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				8753266C29CAAB700030F655 /* KJDownloader.h */,
+				8753266729CAAB700030F655 /* KJDownloader.m */,
+				8753266E29CAAB700030F655 /* KJDownloaderCommon.h */,
+				8753266929CAAB700030F655 /* KJDownloaderCommon.m */,
+				8753266D29CAAB700030F655 /* KJFileHandleInfo.h */,
+				8753266A29CAAB700030F655 /* KJFileHandleInfo.m */,
+				8753266F29CAAB700030F655 /* KJFileHandleManager.h */,
+				8753266B29CAAB700030F655 /* KJFileHandleManager.m */,
+				8753266829CAAB700030F655 /* KJPlayer-Bridging-Header.h */,
+			);
+			path = Downloader;
+			sourceTree = "<group>";
+		};
+		8753267029CAAB700030F655 /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				8753267129CAAB700030F655 /* KJAVPlayer.swift */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
+		8753267229CAAB700030F655 /* Pip */ = {
+			isa = PBXGroup;
+			children = (
+				8753267329CAAB700030F655 /* PictureInPicture.swift */,
+			);
+			path = Pip;
+			sourceTree = "<group>";
+		};
+		8753267629CAAB700030F655 /* SkipTime */ = {
+			isa = PBXGroup;
+			children = (
+				8753267729CAAB700030F655 /* SkipTime.swift */,
+			);
+			path = SkipTime;
+			sourceTree = "<group>";
+		};
+		8753267829CAAB700030F655 /* RecordTime */ = {
+			isa = PBXGroup;
+			children = (
+				8753267929CAAB700030F655 /* RecordTime.swift */,
+				8753267A29CAAB700030F655 /* RecordTimeData.swift */,
+			);
+			path = RecordTime;
+			sourceTree = "<group>";
+		};
+		875326A729CAAC8C0030F655 /* Kernel  */ = {
+			isa = PBXGroup;
+			children = (
+				8753267029CAAB700030F655 /* AVPlayer */,
+			);
+			path = "Kernel ";
+			sourceTree = "<group>";
+		};
+		875326A829CAACDA0030F655 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8753266329CAAB700030F655 /* Cache */,
+				8753265029CAAB700030F655 /* FreeTime */,
+				8753267229CAAB700030F655 /* Pip */,
+				8753267829CAAB700030F655 /* RecordTime */,
+				8753267629CAAB700030F655 /* SkipTime */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		875326A929CAAD5B0030F655 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				8753265529CAAB700030F655 /* Bridge.swift */,
+				8753266129CAAB700030F655 /* Common.swift */,
+				8753265F29CAAB700030F655 /* Enum.swift */,
+				8753265E29CAAB700030F655 /* Function.swift */,
+				8753265A29CAAB700030F655 /* Notification.swift */,
+				8753265629CAAB700030F655 /* Protocol.swift */,
+				8753265829CAAB700030F655 /* Provider.swift */,
+				8753265329CAAB700030F655 /* Screenshots.swift */,
+				8753265729CAAB700030F655 /* Shared.swift */,
+				8753265929CAAB700030F655 /* Timer.swift */,
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		875326B029CAE4460030F655 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8753265D29CAAB700030F655 /* KJPlayerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		875326B129CAE56A0030F655 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8753265B29CAAB700030F655 /* KJBasePlayer.swift */,
+				8753265C29CAAB700030F655 /* KJPlayer.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		873B7E5129CAA93C004ACFE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8753269A29CAAB700030F655 /* KJFileHandleManager.h in Headers */,
+				8753269829CAAB700030F655 /* KJFileHandleInfo.h in Headers */,
+				8753269729CAAB700030F655 /* KJDownloader.h in Headers */,
+				8753269329CAAB700030F655 /* KJPlayer-Bridging-Header.h in Headers */,
+				8753269929CAAB700030F655 /* KJDownloaderCommon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		873B7E5529CAA93C004ACFE5 /* KJPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 873B7E5D29CAA93C004ACFE5 /* Build configuration list for PBXNativeTarget "KJPlayer" */;
+			buildPhases = (
+				873B7E5129CAA93C004ACFE5 /* Headers */,
+				873B7E5229CAA93C004ACFE5 /* Sources */,
+				873B7E5329CAA93C004ACFE5 /* Frameworks */,
+				873B7E5429CAA93C004ACFE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KJPlayer;
+			productName = KJPlayer;
+			productReference = 875326AF29CAAEBD0030F655 /* KJPlayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		873B7E4D29CAA93C004ACFE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					873B7E5529CAA93C004ACFE5 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 873B7E5029CAA93C004ACFE5 /* Build configuration list for PBXProject "KJPlayer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 873B7E4C29CAA93C004ACFE5;
+			productRefGroup = 873B7E4C29CAA93C004ACFE5;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				873B7E5529CAA93C004ACFE5 /* KJPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		873B7E5429CAA93C004ACFE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				875326AD29CAAD940030F655 /* KJPlayer.podspec in Resources */,
+				875326AC29CAAD940030F655 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		873B7E5229CAA93C004ACFE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8753267E29CAAB700030F655 /* PlayerVideoData.swift in Sources */,
+				8753268229CAAB700030F655 /* Screenshots.swift in Sources */,
+				8753268F29CAAB700030F655 /* Timer+Extension.swift in Sources */,
+				8753268329CAAB700030F655 /* Bridge.swift in Sources */,
+				8753268429CAAB700030F655 /* Protocol.swift in Sources */,
+				8753268E29CAAB700030F655 /* Common.swift in Sources */,
+				8753269F29CAAB700030F655 /* RecordTime.swift in Sources */,
+				8753268129CAAB700030F655 /* FreeTime.swift in Sources */,
+				8753269129CAAB700030F655 /* Cache.swift in Sources */,
+				8753267D29CAAB700030F655 /* APlayer.xcdatamodeld in Sources */,
+				8753268529CAAB700030F655 /* Shared.swift in Sources */,
+				8753269529CAAB700030F655 /* KJFileHandleInfo.m in Sources */,
+				8753268A29CAAB700030F655 /* KJPlayer.swift in Sources */,
+				8753269429CAAB700030F655 /* KJDownloaderCommon.m in Sources */,
+				8753267F29CAAB700030F655 /* DatabaseManager.swift in Sources */,
+				8753268829CAAB700030F655 /* Notification.swift in Sources */,
+				8753268629CAAB700030F655 /* Provider.swift in Sources */,
+				8753268729CAAB700030F655 /* Timer.swift in Sources */,
+				8753268929CAAB700030F655 /* KJBasePlayer.swift in Sources */,
+				875326A029CAAB700030F655 /* RecordTimeData.swift in Sources */,
+				8753268D29CAAB700030F655 /* Enum.swift in Sources */,
+				8753269C29CAAB700030F655 /* PictureInPicture.swift in Sources */,
+				8753269229CAAB700030F655 /* KJDownloader.m in Sources */,
+				8753269B29CAAB700030F655 /* KJAVPlayer.swift in Sources */,
+				8753269E29CAAB700030F655 /* SkipTime.swift in Sources */,
+				8753269629CAAB700030F655 /* KJFileHandleManager.m in Sources */,
+				8753269029CAAB700030F655 /* CacheManager.swift in Sources */,
+				8753268029CAAB700030F655 /* DatabaseConfiguration.swift in Sources */,
+				8753268B29CAAB700030F655 /* KJPlayerView.swift in Sources */,
+				8753268C29CAAB700030F655 /* Function.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		873B7E5B29CAA93C004ACFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		873B7E5C29CAA93C004ACFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		873B7E5E29CAA93C004ACFE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AAHMKJNWLX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.KJPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		873B7E5F29CAA93C004ACFE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AAHMKJNWLX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.KJPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		873B7E5029CAA93C004ACFE5 /* Build configuration list for PBXProject "KJPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				873B7E5B29CAA93C004ACFE5 /* Debug */,
+				873B7E5C29CAA93C004ACFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		873B7E5D29CAA93C004ACFE5 /* Build configuration list for PBXNativeTarget "KJPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				873B7E5E29CAA93C004ACFE5 /* Debug */,
+				873B7E5F29CAA93C004ACFE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8753264B29CAAB700030F655 /* APlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8753264C29CAAB700030F655 /* APlayer.xcdatamodel */,
+			);
+			currentVersion = 8753264C29CAAB700030F655 /* APlayer.xcdatamodel */;
+			path = APlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 873B7E4D29CAA93C004ACFE5 /* Project object */;
+}
